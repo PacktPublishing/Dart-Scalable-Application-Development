@@ -1,0 +1,4 @@
+name: test
+description: testing Sublime Text plugin
+dependencies:
+  browser: any

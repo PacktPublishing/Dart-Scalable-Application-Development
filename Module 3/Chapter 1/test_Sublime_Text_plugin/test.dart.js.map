@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "test.dart.js",
+  "sourceRoot": "",
+  "sources": ["/f:/dart/dart-sdk/lib/_internal/lib/js_primitives.dart","test.dart","/f:/dart/dart-sdk/lib/_internal/lib/internal_patch.dart"],
+  "names": ["main","printString"],
+  "mappings": "A;A,a,yB;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A,C;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;A,E,0B,sB,A,C,C,C,C;A,G,C,E,C;A,E,CAoBA,yDAII;kFAOA;kCAKA;qCAMA;qDAOJ,A,C,A,E,Q,Y,A,C,C,C,C;A,G,C,E,C;A,E,CCvCAA,WCIEC,iBDFF,A,C,E,E;A,uB;A,C,C,E,C,C;A,C,C,E,C,I;A,C,C,E,C,I;A,C,C,E,C,I;A;A,I,C,e,C,C,C;e,E;A;A;A;;;;A;;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;A;;;;;;;;;;;;;;gB;A"
+}
