@@ -1,0 +1,12 @@
+name: test_pub
+description: testing pub
+
+# transformers:
+# - $dart2js:
+#  minify: false
+#  checked: true
+
+dependencies:
+  browser: any
+  js: any
+  intl: any
