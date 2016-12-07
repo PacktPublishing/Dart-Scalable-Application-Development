@@ -1,0 +1,7 @@
+name: test_checked_mode
+description: A description
+dependencies:
+  js: any
+
+dev_dependencies:
+  unittest: any
