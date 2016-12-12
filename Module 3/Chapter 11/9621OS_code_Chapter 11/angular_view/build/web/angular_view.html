@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html ng-app>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angular component</title>
+
+<script async type="application/dart" src="angular_view.dart"></script>
+<script src="packages/shadow_dom/shadow_dom.min.js"></script>
+<script async src="packages/browser/dart.js"></script>
+
+<link rel="stylesheet" href="angular_view.css">
+</head>
+<body ng-cloak>
+  <h1>Angular Formatter</h1>
+
+   <search-job
+       type-filter="ctrl.typeFilter"
+       company-filter-map="ctrl.companyFilterMap">
+   </search-job>
+
+  <div job-listing>
+    <h3>Job List</h3>
+    <ul>
+      <li class="pointer"
+        ng-repeat="job in ctrl.jobs | orderBy:'type' | filter:{type:ctrl.typeFilter} | companyfilter:ctrl.companyFilterMap">
+        <salary max-sal="10" salary="job.rate_salary"></salary> <span
+        class="extra-space" ng-click="ctrl.selectJob(job)">{{job.type}}
+      </span>
+      </li>
+    </ul>
+  </div>
+  <div ng-if="ctrl.selectedJob != null">
+    <h3>Job Details</h3>
+    <div>
+      <strong>Type: </strong>{{ctrl.selectedJob.type}}
+    </div>
+    <div>
+      <strong>Company: </strong>{{ctrl.selectedJob.company}}
+    </div>
+    <div>
+      <strong>Salary: </strong>
+      <salary max-sal="10" salary="ctrl.selectedJob.rate_salary"></salary>
+    </div>
+    <div>
+      <strong>Posted: </strong>{{ctrl.selectedJob.posted}}
+    </div>
+    <div>
+      <strong>Skills: </strong>
+      <ul>
+        <li ng-repeat="skill in ctrl.selectedJob.skills">{{skill}}
+        </li>
+      </ul>
+    </div>
+    <div>
+      <strong>More info: </strong>{{ctrl.selectedJob.info}}
+    </div>
+  </div>
+
+</body>
+</html>

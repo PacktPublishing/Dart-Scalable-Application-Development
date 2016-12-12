@@ -1,0 +1,9 @@
+name: pol_intl
+description: A sample Polymer application
+dependencies:
+  intl: any
+  polymer: '>=0.11.0 <0.12.0'
+  serialization: any
+transformers:
+- polymer:
+    entry_points: web/pol_intl.html

@@ -1,0 +1,15 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<polymer-element name="pol-check">
+  <template>
+    <div>
+      Do you want to receive our jobs newsletter? <input type="checkbox" checked="{{receive}}">
+    </div>
+    <div>
+      You will receive the newsletter: {{receive}}
+      <p>Confirmed:</p>
+      <template if={{receive}}>You will receive the newsletter</template>
+      <template if={{!receive}}>You will not receive the newsletter</template>
+    </div>
+  </template>
+   <script type="application/dart" src="pol_check.dart"></script>
+</polymer-element>

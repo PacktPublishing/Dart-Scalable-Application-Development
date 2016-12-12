@@ -1,0 +1,11 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<polymer-element name="find-nodes">
+  <template>
+     <div class="auto-style1">
+         <div id="findme">Hello from inside a div</div>
+          <button on-click="{{btnclick}}">Click to find</button>
+     </div>
+     <p id="show" style="display:none">==&gt; I was found by $ and became visible! </p>
+  </template>
+   <script type="application/dart" src="find_nodes.dart"></script>
+</polymer-element>

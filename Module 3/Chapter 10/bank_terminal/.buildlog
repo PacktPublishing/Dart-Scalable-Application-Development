@@ -1,0 +1,500 @@
+---
+build.dart --machine --full
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1208 ms]
+
+---
+build.dart --machine --changed=lib\bank_account.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1146 ms]
+
+---
+build.dart --machine --changed=lib\bank_terminal.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1065 ms]
+
+---
+build.dart --machine --changed=lib\person.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1141 ms]
+
+---
+build.dart --machine --changed=lib\bank_terminal.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1084 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1055 ms]
+
+---
+build.dart --machine --full
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1216 ms]
+
+---
+build.dart --machine --changed=lib\person.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1078 ms]
+
+---
+build.dart --machine --changed=lib\bank_account.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1047 ms]
+
+---
+build.dart --machine --changed=lib\bank_account.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1078 ms]
+
+---
+build.dart --machine --changed=lib\bank_account.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1134 ms]
+
+---
+build.dart --machine --full
+Unable to open file: F:\learning_dart\chapter_8\bank_terminal\packages\polymer\builder.dart'file:///F:/learning_dart/chapter_8/bank_terminal/build.dart': error: line 1 pos 1: library handler failed
+import 'package:polymer/builder.dart';
+^
+build.dart finished [373 ms]
+
+---
+build.dart --machine --full
+Uncaught Error: FileSystemException: Cannot open file, path = 'F:\Dartiverse\ADartCookbook\book\Chapter 10 - Polymer Dart recipes\code\bank_terminal\packages\polymer\builder.dart' (OS Error: Het systeem kan het opgegeven bestand niet vinden.
+, errno = 2)
+Stack Trace: 
+#0      _File.open.<anonymous closure> (dart:io/file_impl.dart:349)
+#1      _rootRunUnary (dart:async/zone.dart:730)
+#2      _RootZone.runUnary (dart:async/zone.dart:864)
+#3      _Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:488)
+#4      _Future._propagateToListeners (dart:async/future_impl.dart:571)
+#5      _Future._completeWithValue (dart:async/future_impl.dart:331)
+#6      _Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:393)
+#7      _asyncRunCallbackLoop (dart:async/schedule_microtask.dart:23)
+#8      _asyncRunCallback (dart:async/schedule_microtask.dart:32)
+#9      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:128)
+
+
+Unhandled exception:
+FileSystemException: Cannot open file, path = 'F:\Dartiverse\ADartCookbook\book\Chapter 10 - Polymer Dart recipes\code\bank_terminal\packages\polymer\builder.dart' (OS Error: Het systeem kan het opgegeven bestand niet vinden.
+, errno = 2)
+#0      _rootHandleUncaughtError.<anonymous closure>.<anonymous closure> (dart:async/zone.dart:713)
+#1      _asyncRunCallbackLoop (dart:async/schedule_microtask.dart:23)
+#2      _asyncRunCallback (dart:async/schedule_microtask.dart:32)
+#3      _asyncRunCallback (dart:async/schedule_microtask.dart:36)
+#4      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:128)
+build.dart finished [255 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning line 1, column 1 of web\bank_account.html: Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel="import" href="packages/polymer/polymer.html">.
+<polymer-element name="bank-account">
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+warning line 1, column 1 of web\bank_app.html: Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel="import" href="packages/polymer/polymer.html">.
+<polymer-element name="bank-app">
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+error line 2, column 3 of web\bank_app.html: Polymer.dart's implementation of HTML imports are not supported within polymer element definitions, yet. Please move the import out of this <polymer-element>.
+  <link rel="import" href="bank_account.html">
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+build failed with errors: {Transform polymer (Linter) on bank_terminal|web/bank_app.html threw error: Polymer.dart's implementation of HTML imports are not supported within polymer element definitions, yet. Please move the import out of this <polymer-element>.}
+build.dart finished [2547 ms]
+
+---
+build.dart --machine --changed=web\bank_account.html
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+error line 2, column 3 of web\bank_app.html: Polymer.dart's implementation of HTML imports are not supported within polymer element definitions, yet. Please move the import out of this <polymer-element>.
+  <link rel="import" href="bank_account.html">
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+build failed with errors: {Transform polymer (Linter) on bank_terminal|web/bank_app.html threw error: Polymer.dart's implementation of HTML imports are not supported within polymer element definitions, yet. Please move the import out of this <polymer-element>.}
+build.dart finished [2416 ms]
+
+---
+build.dart --machine --changed=web\bank_terminal.html
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+error line 2, column 3 of web\bank_app.html: Polymer.dart's implementation of HTML imports are not supported within polymer element definitions, yet. Please move the import out of this <polymer-element>.
+  <link rel="import" href="bank_account.html">
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+build failed with errors: {Transform polymer (Linter) on bank_terminal|web/bank_app.html threw error: Polymer.dart's implementation of HTML imports are not supported within polymer element definitions, yet. Please move the import out of this <polymer-element>.}
+build.dart finished [2104 ms]
+
+---
+build.dart --machine --changed=web\bank_terminal.html
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+error line 2, column 3 of web\bank_app.html: Polymer.dart's implementation of HTML imports are not supported within polymer element definitions, yet. Please move the import out of this <polymer-element>.
+  <link rel="import" href="bank_account.html">
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+build failed with errors: {Transform polymer (Linter) on bank_terminal|web/bank_app.html threw error: Polymer.dart's implementation of HTML imports are not supported within polymer element definitions, yet. Please move the import out of this <polymer-element>.}
+build.dart finished [2379 ms]
+
+---
+build.dart --machine --changed=web\bank_app.html
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+error line 3, column 3 of web\bank_app.html: Polymer.dart's implementation of HTML imports are not supported within polymer element definitions, yet. Please move the import out of this <polymer-element>.
+  <link rel="import" href="bank_account.html">
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+build failed with errors: {Transform polymer (Linter) on bank_terminal|web/bank_app.html threw error: Polymer.dart's implementation of HTML imports are not supported within polymer element definitions, yet. Please move the import out of this <polymer-element>.}
+build.dart finished [1827 ms]
+
+---
+build.dart --machine --changed=web\bank_app.html
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2100 ms]
+
+---
+build.dart --machine --changed=web\bank_app.html
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1811 ms]
+
+---
+build.dart --machine --removed=web\bank_account.html
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1814 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2727 ms]
+
+---
+build.dart --machine --removed=web\bank_account.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1806 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2688 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [3521 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2978 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2103 ms]
+
+---
+build.dart --machine --changed=web\bank_terminal.html
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2487 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2104 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1811 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2794 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2475 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2051 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1806 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2105 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2162 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2433 ms]
+
+---
+build.dart --machine --changed=web\bank_terminal.html
+[{"method":"warning","params":{"file":"web/bank_terminal.html","message":"Unexpected end tag (bank-app). Ignored.","line":18,"charStart":572,"charEnd":583}}]
+[{"method":"warning","params":{"file":"web/bank_terminal.html","message":"End tag (form) seen too early. Ignored.","line":19,"charStart":588,"charEnd":595}}]
+[{"method":"warning","params":{"file":"web/bank_terminal.html","message":"Unexpected end tag (body). Missing end tag (bank-apps).","line":20,"charStart":598,"charEnd":605}}]
+[{"method":"warning","params":{"file":"web/bank_terminal.html","message":"definition for Polymer element with tag name \"bank-apps\" not found.","line":18,"charStart":561,"charEnd":572}}]
+build.dart finished [2157 ms]
+
+---
+build.dart --machine --changed=web\bank_terminal.html
+
+build.dart finished [2375 ms]
+
+---
+build.dart --machine --changed=web\bank_terminal.html
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning line 18, column 16 of web\bank_terminal.html: Unexpected end tag (bank-app). Ignored.
+    <bank-apps></bank-app>
+               ^^^^^^^^^^^
+warning line 19, column 5 of web\bank_terminal.html: End tag (form) seen too early. Ignored.
+    </form>
+    ^^^^^^^
+warning line 20, column 3 of web\bank_terminal.html: Unexpected end tag (body). Missing end tag (bank-apps).
+  </body>
+  ^^^^^^^
+warning line 18, column 5 of web\bank_terminal.html: definition for Polymer element with tag name "bank-apps" not found.
+    <bank-apps></bank-app>
+    ^^^^^^^^^^^
+build.dart finished [2795 ms]
+
+---
+build.dart --machine --changed=web\bank_app.html
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning line 18, column 16 of web\bank_terminal.html: Unexpected end tag (bank-app). Ignored.
+    <bank-apps></bank-app>
+               ^^^^^^^^^^^
+warning line 19, column 5 of web\bank_terminal.html: End tag (form) seen too early. Ignored.
+    </form>
+    ^^^^^^^
+warning line 20, column 3 of web\bank_terminal.html: Unexpected end tag (body). Missing end tag (bank-apps).
+  </body>
+  ^^^^^^^
+warning line 18, column 5 of web\bank_terminal.html: definition for Polymer element with tag name "bank-apps" not found.
+    <bank-apps></bank-app>
+    ^^^^^^^^^^^
+build.dart finished [2827 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning line 18, column 16 of web\bank_terminal.html: Unexpected end tag (bank-app). Ignored.
+    <bank-apps></bank-app>
+               ^^^^^^^^^^^
+warning line 19, column 5 of web\bank_terminal.html: End tag (form) seen too early. Ignored.
+    </form>
+    ^^^^^^^
+warning line 20, column 3 of web\bank_terminal.html: Unexpected end tag (body). Missing end tag (bank-apps).
+  </body>
+  ^^^^^^^
+warning line 18, column 5 of web\bank_terminal.html: definition for Polymer element with tag name "bank-apps" not found.
+    <bank-apps></bank-app>
+    ^^^^^^^^^^^
+build.dart finished [2993 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning line 18, column 16 of web\bank_terminal.html: Unexpected end tag (bank-app). Ignored.
+    <bank-apps></bank-app>
+               ^^^^^^^^^^^
+warning line 19, column 5 of web\bank_terminal.html: End tag (form) seen too early. Ignored.
+    </form>
+    ^^^^^^^
+warning line 20, column 3 of web\bank_terminal.html: Unexpected end tag (body). Missing end tag (bank-apps).
+  </body>
+  ^^^^^^^
+warning line 18, column 5 of web\bank_terminal.html: definition for Polymer element with tag name "bank-apps" not found.
+    <bank-apps></bank-app>
+    ^^^^^^^^^^^
+build.dart finished [2582 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning line 18, column 16 of web\bank_terminal.html: Unexpected end tag (bank-app). Ignored.
+    <bank-apps></bank-app>
+               ^^^^^^^^^^^
+warning line 19, column 5 of web\bank_terminal.html: End tag (form) seen too early. Ignored.
+    </form>
+    ^^^^^^^
+warning line 20, column 3 of web\bank_terminal.html: Unexpected end tag (body). Missing end tag (bank-apps).
+  </body>
+  ^^^^^^^
+warning line 18, column 5 of web\bank_terminal.html: definition for Polymer element with tag name "bank-apps" not found.
+    <bank-apps></bank-app>
+    ^^^^^^^^^^^
+build.dart finished [2104 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning line 18, column 16 of web\bank_terminal.html: Unexpected end tag (bank-app). Ignored.
+    <bank-apps></bank-app>
+               ^^^^^^^^^^^
+warning line 19, column 5 of web\bank_terminal.html: End tag (form) seen too early. Ignored.
+    </form>
+    ^^^^^^^
+warning line 20, column 3 of web\bank_terminal.html: Unexpected end tag (body). Missing end tag (bank-apps).
+  </body>
+  ^^^^^^^
+warning line 18, column 5 of web\bank_terminal.html: definition for Polymer element with tag name "bank-apps" not found.
+    <bank-apps></bank-app>
+    ^^^^^^^^^^^
+build.dart finished [2136 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning line 18, column 16 of web\bank_terminal.html: Unexpected end tag (bank-app). Ignored.
+    <bank-apps></bank-app>
+               ^^^^^^^^^^^
+warning line 19, column 5 of web\bank_terminal.html: End tag (form) seen too early. Ignored.
+    </form>
+    ^^^^^^^
+warning line 20, column 3 of web\bank_terminal.html: Unexpected end tag (body). Missing end tag (bank-apps).
+  </body>
+  ^^^^^^^
+warning line 18, column 5 of web\bank_terminal.html: definition for Polymer element with tag name "bank-apps" not found.
+    <bank-apps></bank-app>
+    ^^^^^^^^^^^
+build.dart finished [2101 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning line 18, column 16 of web\bank_terminal.html: Unexpected end tag (bank-app). Ignored.
+    <bank-apps></bank-app>
+               ^^^^^^^^^^^
+warning line 19, column 5 of web\bank_terminal.html: End tag (form) seen too early. Ignored.
+    </form>
+    ^^^^^^^
+warning line 20, column 3 of web\bank_terminal.html: Unexpected end tag (body). Missing end tag (bank-apps).
+  </body>
+  ^^^^^^^
+warning line 18, column 5 of web\bank_terminal.html: definition for Polymer element with tag name "bank-apps" not found.
+    <bank-apps></bank-app>
+    ^^^^^^^^^^^
+build.dart finished [2401 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning line 18, column 16 of web\bank_terminal.html: Unexpected end tag (bank-app). Ignored.
+    <bank-apps></bank-app>
+               ^^^^^^^^^^^
+warning line 19, column 5 of web\bank_terminal.html: End tag (form) seen too early. Ignored.
+    </form>
+    ^^^^^^^
+warning line 20, column 3 of web\bank_terminal.html: Unexpected end tag (body). Missing end tag (bank-apps).
+  </body>
+  ^^^^^^^
+warning line 18, column 5 of web\bank_terminal.html: definition for Polymer element with tag name "bank-apps" not found.
+    <bank-apps></bank-app>
+    ^^^^^^^^^^^
+build.dart finished [1909 ms]
+
+---
+build.dart --machine --full
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning line 18, column 16 of web\bank_terminal.html: Unexpected end tag (bank-app). Ignored.
+    <bank-apps></bank-app>
+               ^^^^^^^^^^^
+warning line 19, column 5 of web\bank_terminal.html: End tag (form) seen too early. Ignored.
+    </form>
+    ^^^^^^^
+warning line 20, column 3 of web\bank_terminal.html: Unexpected end tag (body). Missing end tag (bank-apps).
+  </body>
+  ^^^^^^^
+warning line 18, column 5 of web\bank_terminal.html: definition for Polymer element with tag name "bank-apps" not found.
+    <bank-apps></bank-app>
+    ^^^^^^^^^^^
+build.dart finished [1969 ms]
+
+---
+build.dart --machine --full
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+warning line 18, column 16 of web\bank_terminal.html: Unexpected end tag (bank-app). Ignored.
+    <bank-apps></bank-app>
+               ^^^^^^^^^^^
+warning line 19, column 5 of web\bank_terminal.html: End tag (form) seen too early. Ignored.
+    </form>
+    ^^^^^^^
+warning line 20, column 3 of web\bank_terminal.html: Unexpected end tag (body). Missing end tag (bank-apps).
+  </body>
+  ^^^^^^^
+warning line 18, column 5 of web\bank_terminal.html: definition for Polymer element with tag name "bank-apps" not found.
+    <bank-apps></bank-app>
+    ^^^^^^^^^^^
+build.dart finished [2341 ms]
+
+---
+build.dart --machine --changed=web\bank_terminal.html
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2936 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2402 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1492 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2396 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2496 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2188 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2199 ms]
+
+---
+build.dart --machine --full
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2786 ms]
+
+---
+build.dart --machine --full
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [3042 ms]
+
+---
+build.dart --machine --full
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2519 ms]
+
+---
+build.dart --machine --changed=web\bank_app.dart
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2309 ms]
+
+---
+build.dart --machine --full
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [2873 ms]
+
+---
+build.dart --machine --full
+warning: now that main takes arguments, you need to explicitly pass options to build(). Running as if no options were passed.
+build.dart finished [1863 ms]
+

@@ -1,0 +1,15 @@
+<div id="filters">
+    <div>
+      <label for="type-filter">Filter jobs by type</label>
+      <input id="type-filter" type="text" ng-model="cmp.typeFilter" value=" ">
+    </div>
+    <div>
+      Filter jobs by company: <span
+        ng-repeat="company in cmp.companies"> <label> <input
+          type="checkbox" ng-model="cmp.companyFilterMap[company]">{{company}}
+      </label>
+      </span>
+    </div>
+    <input type="button" value="Clear Filters"
+      ng-click="cmp.clearFilters()">
+</div>

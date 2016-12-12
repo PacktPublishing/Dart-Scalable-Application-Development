@@ -1,0 +1,5 @@
+name: simple_webserver
+description: A sample command-line application
+dependencies:
+  browser: any
+  lawndart: any

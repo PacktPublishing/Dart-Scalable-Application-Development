@@ -1,0 +1,14 @@
+
+body {
+  background-color: #f6f6f6;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 15px;
+}
+
+h1, p, label {
+  color: #67707a;
+}
+

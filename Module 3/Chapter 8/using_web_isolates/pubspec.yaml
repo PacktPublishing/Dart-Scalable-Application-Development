@@ -1,0 +1,4 @@
+name: using_web_isolates
+description: A sample web application
+dependencies:
+  browser: any

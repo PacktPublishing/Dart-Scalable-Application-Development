@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://www.packtpub.com/learning-dart/book -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Learning Dart   Packt Publishing_files/cb=gapi.loaded_1" async=""></script><script src="./Learning Dart   Packt Publishing_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" src="./Learning Dart   Packt Publishing_files/plusone.js" gapi_processed="true"></script><link rel="stylesheet" type="text/css" href="./Learning Dart   Packt Publishing_files/widget120.css" media="all">
+    <title>Learning Dart  | Packt Publishing</title>
+    <link type="text/css" rel="stylesheet" media="all" href="./Learning Dart   Packt Publishing_files/72ad479e4d0cf54b8d683a7aa446997f.css">
+  
+  
+<link rel="shortcut icon" href="http://dgdsbygo8mp3h.cloudfront.net/misc/favicon.ico" type="image/x-icon">
+<meta name="description" content=" Develop apps for the Web using Dart and HTML5  Build powerful HTML5 forms, validate and store data in local storage, and use web components to build your own user interface Make games by drawing and integrate audio and video in the browser Learn how to develop an application with the help of a mode">
+<meta name="keywords" content="Dart, Learning Dart practically, HTML5 with Dart, Building games using Dart, MVC and UI Frameworks in Dart">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    
+  <!--[if IE]>
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/packt_new/ie.css" >
+  <![endif]-->
+  <!--[if IE 6]>
+	<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/packt_new/packt-ie6.css" >
+	<script type="text/javascript" src="/sites/default/files/pp/iepngfix_tilebg.js"></script>
+  <![endif]--> 
+  
+  <script type="text/javascript" async="" src="./Learning Dart   Packt Publishing_files/addthis_widget.js"></script><script async="" src="./Learning Dart   Packt Publishing_files/prum.min.js"></script><script type="text/javascript" async="" src="./Learning Dart   Packt Publishing_files/ga.js"></script><script type="text/javascript" async="" src="./Learning Dart   Packt Publishing_files/ga.js"></script><script type="text/javascript" src="./Learning Dart   Packt Publishing_files/7ec3b3cf674f4f1d23e9d30c89426cce.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "dhtmlMenu": [ "doubleclick", "clone" ], "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "lightbox2": { "rtl": 0, "file_path": "/(\\w\\w/)sites/default/files", "default_image": "/sites/all/modules/lightbox2/images/brokenimage.jpg", "border_size": "10", "font_color": "000", "box_color": "fff", "top_position": "", "overlay_opacity": "0.8", "overlay_color": "000", "disable_close_click": 1, "resize_sequence": "0", "resize_speed": 400, "fade_in_speed": 400, "slide_down_speed": 600, "use_alt_layout": 0, "disable_resize": 0, "disable_zoom": 0, "force_show_nav": 0, "loop_items": 1, "node_link_text": "View Image Details", "node_link_target": 0, "image_count": "Image !current of !total", "video_count": "Video !current of !total", "page_count": "Page !current of !total", "lite_press_x_close": "press \x3ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\x3e\x3ckbd\x3ex\x3c/kbd\x3e\x3c/a\x3e to close", "download_link_text": "", "enable_login": false, "enable_contact": false, "keys_close": "c x 27", "keys_previous": "p 37", "keys_next": "n 39", "keys_zoom": "z", "keys_play_pause": "32", "display_image_size": "", "image_node_sizes": "()", "trigger_lightbox_classes": "img.inline,img.image-img_assist_custom", "trigger_lightbox_group_classes": "", "trigger_slideshow_classes": "", "trigger_lightframe_classes": "", "trigger_lightframe_group_classes": "", "custom_class_handler": "lightbox_ungrouped", "custom_trigger_classes": "", "disable_for_gallery_lists": 1, "disable_for_acidfree_gallery_lists": true, "enable_acidfree_videos": true, "slideshow_interval": 5000, "slideshow_automatic_start": true, "slideshow_automatic_exit": true, "show_play_pause": true, "pause_on_next_click": false, "pause_on_previous_click": true, "loop_slides": false, "iframe_width": 600, "iframe_height": 400, "iframe_border": 1, "enable_video": 0 }, "addthis": { "config_default": { "services_toolbox": "facebook,twitter,linkedin,reddit,google_plusone", "services_compact": "", "services_expanded": "", "ui_cobrand": "", "ui_header_color": "#000000", "ui_header_background": "#FFFFFF", "ui_click": true, "ui_delay": "", "ui_use_addressbook": 0, "pubid": "xa-4e2cfd1147868c4e", "data_track_clickback": 0, "data_ga_tracker": "pageTracker", "ui_use_css": true, "data_use_cookies": false, "ui_language": "en", "data_use_flash": false }, "share_default": { "templates": { "twitter": "" } } }, "viewscarousel": [  ] });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$(document).ready(function()
+			{
+				$(".views-field-discounted-price").each(function()
+					{
+						var self = $(this);
+						var content = self.find(".field-content:first");
+						if ( (content.size() > 0) && ($.trim( content.html() ).length == 0) )
+							return true;
+						else if ($.trim( self.html() ).length == 0)
+							return true;
+
+						self.parent().find(".views-field-sell-price:not(th)")
+							.addClass("original-sell-price");
+					});
+				$(".uc-price-sell:not(.original-sell-price)").each(function()
+					{
+						var self = $(this);
+						self.addClass("original-sell-price")
+							.after(	$( ".field-type-discounted-price:first", self.parent() )	);
+					});
+				//Legacy
+				$(".sell-price:not(.original-sell-price)").each(function()
+					{
+						var self = $(this);
+						self.addClass("original-sell-price")
+							.after(	$( ".field-type-discounted-price:first", self.parent() )	);
+					});
+			});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _paq = _paq || [];_paq.push(["_setAccount", "UA-284627-1"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+
+  <script type="text/javascript">Drupal.uid = 0;</script>  <script type="text/javascript">
+        var _prum = [['id', '5167068de6e53dd405000002'],
+                     ['mark', 'firstbyte', (new Date()).getTime()]];
+        (function() {
+            var s = document.getElementsByTagName('script')[0]
+              , p = document.createElement('script');
+            p.async = 'async';
+            p.src = '//rum-static.pingdom.net/prum.min.js';
+            s.parentNode.insertBefore(p, s);
+        })();
+	</script>
+	
+	<script type="text/javascript">
+			try {
+			  var s = window.location.search.substring(1).split("&");
+			  var qs = "";
+			  for (var c = 0; c < s.length; c++) {
+			  	var k = s[c].split("=");
+			  	if (k[0] === 'keys') {
+			  	 qs = "?" + s[c];
+			  	 break;
+			  	}
+			  }			
+			  _paq.push(['_setSiteSpeedSampleRate', 100]);
+			  _paq.push(["_trackPageview", "/learning-dart/book" + qs]);	
+			} catch(err) {
+			
+			}
+				</script>
+	
+    
+  <link rel="alternate" type="application/rss+xml" href="http://www.packtpub.com/rss.xml" title="Packt Publishing News">
+<link type="text/css" rel="stylesheet" href="chrome-extension://aciopjigkkgbpbijaoialognoidodden/content_scripts/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://aciopjigkkgbpbijaoialognoidodden/content_scripts/page_context.js"></script><link type="text/css" rel="stylesheet" href="chrome-extension://aciopjigkkgbpbijaoialognoidodden/content_scripts/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://aciopjigkkgbpbijaoialognoidodden/content_scripts/page_context.js"></script></head>
+
+<body id="pixture-reloaded" class="not-front not-logged-in page-node node-type-books two-sidebars page-learning-dart-book section-learning-dart node-full-view with-logo  page-book lightbox-processed">
+	<div id="page">
+				<div id="shadow-left">
+					<div id="shadow-right">
+						<div id="page-background">
+															<div id="header">
+									<div id="head-elements">
+																				<div id="page-top">
+											<div id="primary-links" class="block block-block region-odd odd region-count-1 count-1 collapsiblock-processed">
+								  				<div class="block-inner">
+													<div class="block-content">
+												        												          <!-- Primary || Superfish -->
+												              <div class="links"><span class="menu-1082 first plinks"><a href="http://www.packtpub.com/"><div id="packtpub-logo">Packt Publishing</div></a></span>
+<span class="menu-sep"></span><span class="menu-2234 plinks"><a href="http://www.packtpub.com/books/all" title="">Product Categories ▼</a><div id="books-menu">
+			<div class="lower">
+				<div id="tab-overlay"></div>
+				
+<div class="books-menu-column ">
+<div class="inner">
+	<p><a href="http://www.packtpub.com/books"><b>All Books</b> <span class="category-count">(2230)</span><br></a></p>
+	<p><a href="http://www.packtpub.com/recently-published"><b>Latest Releases</b> <span class="category-count"></span><br></a></p>
+	<p><a href="http://www.packtpub.com/books/video"><b>Video</b> <span class="category-count">(70)</span><br></a></p>
+	<p><a href="http://www.packtpub.com/books/application-development">Application Development <span class="category-count">(310)</span><br></a></p>
+</div>
+</div>
+<div class="books-menu-column ">
+<div class="inner">
+	<p><a href="http://www.packtpub.com/books/big-data-and-business-intelligence">Big Data and Business Intelligence <span class="category-count">(182)</span><br></a></p>
+	<p><a href="http://www.packtpub.com/books/business-skills">Business Skills <span class="category-count">(12)</span><br></a></p>
+	<p><a href="http://www.packtpub.com/books/cms-and-ecommerce">CMS and eCommerce <span class="category-count">(242)</span><br></a></p>
+	<p><a href="http://www.packtpub.com/books/enterprise-products-and-platforms">Enterprise Products and Platforms <span class="category-count">(365)</span><br></a></p>
+</div>
+</div>
+<div class="books-menu-column ">
+<div class="inner">
+	<p><a href="http://www.packtpub.com/books/game-development">Game Development <span class="category-count">(137)</span><br></a></p>
+	<p><a href="http://www.packtpub.com/books/instant">Instant <span class="category-count">(228)</span><br></a></p>
+	<p><a href="http://www.packtpub.com/books/mobile-application-development">Mobile Application Development <span class="category-count">(99)</span><br></a></p>
+	<p><a href="http://www.packtpub.com/books/networking-and-servers">Networking and Servers <span class="category-count">(166)</span><br></a></p>
+</div>
+</div>
+<div class="books-menu-column last">
+<div class="inner">
+	<p><a href="http://www.packtpub.com/books/other">Other <span class="category-count">(301)</span><br></a></p>
+	<p><a href="http://www.packtpub.com/books/virtualization-and-cloud">Virtualization and Cloud <span class="category-count">(78)</span><br></a></p>
+	<p><a href="http://www.packtpub.com/books/web-development">Web Development <span class="category-count">(413)</span><br></a></p>
+</div>
+</div>				<div class="clear"></div>
+			</div>
+		</div></span>
+<span class="menu-sep"></span><span class="menu-2347 plinks"><a href="http://www.packtpub.com/support" title="">Support ▼</a><div id="support-menu" style="left: 307px;">
+		<div id="support-overlay"></div>
+		<div style="width: 220px;float:left;margin-bottom:10px;">
+			<a href="http://www.packtpub.com/support">Code Download and Errata</a>
+		</div>
+		<div style="width: 220px;float:left;margin-bottom:10px;">
+			<a href="http://www.packtpub.com/account/title/upgrade-terms-and-conditions" style="font-weight: bold;">Packt Anytime, Anywhere</a>
+		</div>
+		<div style="width: 220px;float:left;margin-bottom:10px;margin-left:15px;">
+			<a href="http://www.packtpub.com/account/title/register">Register Books</a>
+		</div>
+		<div style="width: 220px;float:left;margin-bottom:10px;margin-left:15px;">
+			<a href="http://www.packtpub.com/account/title/upgrade">Print Upgrades</a>
+		</div>
+		<div style="width: 220px;float:left;margin-bottom:10px;margin-left:15px;">
+			<a href="http://www.packtpub.com/account/files">eBook Downloads</a>
+		</div>
+		<div style="width: 220px;float:left;margin-bottom:10px;">
+			<a href="http://www.packtpub.com/support-complaints-and-feedback">Video Support</a>
+		</div>
+		<div style="width: 220px;float:left;margin-bottom:10px;">
+			<a href="http://www.packtpub.com/contact">Contact Us</a>
+		</div>
+	</div></span>
+<span class="menu-sep"></span><span class="menu-1187 plinks"><a href="http://www.packtpub.com/article-network" title="Articles">Article Network</a></span>
+<span class="menu-sep"></span><span class="menu-1630 plinks"><a href="http://www.packtpub.com/authors" title="">Authors</a></span>
+<span class="menu-sep"></span><span class="menu-1663 plinks"><a href="http://www.packtpub.com/news-center" title="">News</a></span>
+<span class="menu-sep"></span><span class="menu-10175 plinks"><a href="https://careers.packtpub.com/" title="">Careers</a></span>
+<span class="menu-sep"></span><span class="menu-27973 last plinks"><a href="http://packtlib.packtpub.com/"><div id="packtlib-logo">PacktLib</div></a></span>
+<div class="clear"></div></div>												        												   	</div>
+												</div>
+											</div>  
+					                    </div>  
+																			    <div style="clear: both;"></div>
+							        </div>
+							        <!-- /div#head_elements -->
+							        
+							        <!-- Packt book image header -->
+								    <div id="top-banner" class="" style="cursor: pointer;">
+								    
+																		
+																        	<div id="login-box" style="cursor: auto;">
+											<form action="https://www.packtpub.com/learning-dart/book" accept-charset="UTF-8" method="post" id="packt-login-form-header"><div><div class="form-item" id="login-name-wrapper"><input type="text" maxlength="128" name="email" id="login-name" size="60" value="" class="form-text form-text login-name test" placeholder="email" onclick="clearIf(this, &quot;Username&quot;)"></div><div class="form-item" id="login-password-wrapper"><input type="password" name="password" id="login-password" maxlength="128" size="60" class="form-text form-text login-name" placeholder="password"></div><div class="login-button"><input type="submit" name="op" id="edit-submit-1" value="Login" class=" form-submit"></div><div class="forgot-password"><a href="http://www.packtpub.com/account/password">Forgot login?</a></div><div class="register"><a href="http://www.packtpub.com/login">New to Packt?</a></div><input type="hidden" name="form_id" id="edit-packt-login-form-header" value="packt_login_form_header"></div></form>            
+											<div style="width:262px; clear: both"></div>
+								        </div>
+							        							        
+																			<div id="search-bar-box" style="cursor: auto;">
+							                <div class="search-bar-inner">
+							                	<form action="http://www.packtpub.com/search" accept-charset="UTF-8" method="get" id="packt-libraries-main-search-form">
+<div><div class="form-item" id="edit-keys-wrapper">
+ <input type="text" name="keys" id="edit-keys" size="49" value="" placeholder="Search..." class="form-text form-autocomplete" autocomplete="OFF">
+</div>
+<input class="autocomplete autocomplete-processed" type="hidden" id="edit-keys-autocomplete" value="/searchsolr/autocomplete" disabled="disabled"><input type="hidden" name="sort" id="edit-sort" value="0">
+<input type="hidden" name="types" id="edit-types" value="0">
+<input type="hidden" name="forthcoming" id="edit-forthcoming" value="1">
+<input type="hidden" name="available" id="edit-available" value="1">
+<input type="hidden" name="count" id="edit-count" value="20">
+<input type="submit" name="op" id="edit-submit-1" value="Go" class=" form-submit">
+
+</div></form>
+																		                </div>
+								        </div>
+							        									</div>
+									<!-- /#top_banner -->
+		   					 	</div>
+		   					 	<!--/#header -->		   					 	
+		   					 			   					 	
+																<div id="breadcrumb">
+									<div class="inner">
+																					<div class="breadcrumb"><a href="http://www.packtpub.com/">Home</a>&nbsp; &gt; &nbsp;<a href="http://www.packtpub.com/books">Books</a>&nbsp; &gt; &nbsp;<a href="./Learning Dart   Packt Publishing_files/Learning Dart   Packt Publishing.html" class="active">Learning Dart</a></div>												
+									</div>
+								</div>
+														
+														<div id="secondary">
+					            <div class="inner">
+									
+
+
+<div id="block-block-27" class="block block-block region-odd odd region-count-1 count-1 ">
+  <div class="block-inner">
+    
+  
+    <div class="block-content">
+      <div class="block-content-inner">
+        <a href="http://www.packtpub.com/account">My Account</a> | 
+<a href="http://www.packtpub.com/newsletters">Newsletters</a> |
+<a href="http://www.packtpub.com/user-groups">User Groups</a> | 
+<a href="http://www.packtpub.com/contact">Contact</a> | 
+<a href="http://www.packtpub.com/about">About Us</a>      </div>
+    </div>
+  </div> 
+</div> <!-- /block -->
+								</div> 
+				            </div>
+				            				            
+				            <div class="clear"></div>
+	
+														    						    						
+						    	
+													<div id="main-container">
+						
+													
+													
+							<div id="main" class="no-header-blocks noleft">
+							
+															   	<div id="content">
+									<div id="content-inner">
+									
+																				
+										<div id="content-inner-inner">
+										
+						
+																					
+																						
+									        <div id="content-area">
+																																														        	<div id="content-header">
+		<div class="bpleft"><h1>Learning Dart </h1></div>
+		<div class="bpright">
+			<div class="author"><a href="http://www.packtpub.com/authors/profiles/dzenan-ridjanovic">Dzenan Ridjanovic</a>, <a href="http://www.packtpub.com/authors/profiles/ivo-balbaert">Ivo Balbaert</a></div>
+		</div>
+	</div>
+	<br>
+	
+	<div id="book-page ">
+		<div class="anchors">
+			<span></span>
+			<a href="http://www.packtpub.com/learning-dart/book#overview" onclick="$(&#39;#tab-overview&#39;).click()">Overview</a> |
+			<a href="http://www.packtpub.com/learning-dart/book#reviews" onclick="$(&#39;#tab-reviews&#39;).click()">Reviews</a> | 			<a href="http://www.packtpub.com/learning-dart/book#author" onclick="$(&#39;#tab-author&#39;).click()">Author</a>	|
+			<a href="http://www.packtpub.com/learning-dart/book#support" onclick="$(&#39;#tab-downloads&#39;).click()">Support</a> |
+			<a href="http://www.packtpub.com/learning-dart/book#sample" onclick="$(&#39;#tab-sample&#39;).click()">Sample Chapters</a>
+		</div>
+	
+			
+					
+	
+		
+		<div class="cover-prices">
+			<div class="cover-images">
+				<div class="inner">
+					<div class="book-image centred">
+						<a title="Learning Dart " rel="lightbox[images]" href="http://www.packtpub.com/sites/default/files/7422OT_Learning%20Dart.jpg" class="lightbox-processed"><img src="./Learning Dart   Packt Publishing_files/7422OT_Learning Dart.jpg" alt="Learning Dart " title="Learning Dart " class="bookimage"></a>
+					</div>
+										<div class="clear"></div>
+						
+					</div>
+				</div>
+	
+			<div class="prices">
+					 				
+                                <div class="price-choice ">
+                        <div class="price ">
+                                <div class="price-inner">
+	                                eBook:
+	                                <span class="price">$35.99</span>	                                <br>
+	                                Formats:
+	                                	                                	<img src="./Learning Dart   Packt Publishing_files/formats.png" alt="PDF, PacktLib, ePub and Mobi formats">
+	                                                                </div>
+                                <div class="real-price">
+                                        <span class="larger">$30.59</span>
+                                        <br><span class="saving">save 15%!</span>                                </div>
+                                <div class="add-to-cart-button">
+                                        <form action="http://www.packtpub.com/add_to_cart_upsell/14448" accept-charset="UTF-8" method="post" id="packt-libraries-upsell-add-to-cart-form-ebook-only">
+<div><input type="hidden" name="nids" id="nids" value="14448">
+<input type="hidden" name="qtys" id="nids" value="1">
+<input type="image" name="submit-14448" id="submit-14448" value="" src="./Learning Dart   Packt Publishing_files/addtocart.gif" class="go_button, form-image form-image">
+<input type="hidden" name="upsell" id="edit-upsell" value="1">
+<input type="hidden" name="form_build_id" id="form-01c6b8e4c66fce5119ca09c48f07a11c" value="form-01c6b8e4c66fce5119ca09c48f07a11c">
+<input type="hidden" name="form_id" id="edit-packt-libraries-upsell-add-to-cart-form-ebook-only" value="packt_libraries_upsell_add_to_cart_form_ebook_only">
+
+</div></form>
+                                </div>
+                                <div class="clear"></div>
+                        </div>
+                </div>
+                                                <div class="price-choice bundle">
+                        <div class="price last">
+                                <div class="price-inner">
+                                        Print + free eBook + free PacktLib access to the book:
+                                        <span class="price">$95.98</span>                                        &nbsp;&nbsp;
+                                        <span class="print-cover-price">Print cover: $59.99</span>
+                                        <br>
+                                </div>
+                                <div class="real-price">
+                                        <span class="larger">$59.99</span>
+                                        <br><span class="saving">save 37%!</span>                                </div>
+                                <div class="add-to-cart-button">
+                                        <form action="http://www.packtpub.com/add_to_cart_upsell/14449/14448" accept-charset="UTF-8" method="post" id="packt-libraries-upsell-add-to-cart-form-book-and-ebook">
+<div><input type="hidden" name="nids" id="nids" value="14449,14448">
+<input type="hidden" name="qtys" id="nids" value="1,1">
+<input type="image" name="submit-14449,14448" id="submit-14449,14448" value="" src="./Learning Dart   Packt Publishing_files/addtocart.gif" class="go_button, form-image form-image">
+<input type="hidden" name="upsell" id="edit-upsell-1" value="1">
+<input type="hidden" name="form_build_id" id="form-42a6746d8247696d2cb312241b00333e" value="form-42a6746d8247696d2cb312241b00333e">
+<input type="hidden" name="form_id" id="edit-packt-libraries-upsell-add-to-cart-form-book-and-ebook" value="packt_libraries_upsell_add_to_cart_form_book_and_ebook">
+
+</div></form>
+                                </div>
+                                <div class="clear"></div>
+                        </div>
+                </div>
+                
+                <div class="change-currency-form" style="margin-top:0.5em">
+                 <form action="./Learning Dart   Packt Publishing_files/Learning Dart   Packt Publishing.html" accept-charset="UTF-8" method="post" id="cselform2934">
+<div><div class="form-item" id="edit-currency-wrapper">
+ <label for="edit-currency">Currency: </label>
+ <select name="currency" onchange="document.getElementById(&#39;cselform2934&#39;).submit();" class="form-select" id="edit-currency"><option value="GBP">GBP £</option><option value="USD" selected="selected">US $</option><option value="EUR">EUR €</option><option value="AUD">AU $</option></select>
+</div>
+<noscript>&lt;input type="submit" name="op" id="edit-submit" value=""  style="display: none;" class=" form-submit" /&gt;
+</noscript><input type="hidden" name="form_build_id" id="form-8da28a5ab7d3226255494533a34e1f06" value="form-8da28a5ab7d3226255494533a34e1f06">
+<input type="hidden" name="form_id" id="edit-packt-currency-select" value="packt_currency_select">
+
+</div></form>
+                </div>
+
+
+								
+				
+									<div class="free-shipping">
+						<img src="./Learning Dart   Packt Publishing_files/free-shipping.png">
+						<strong>Free Shipping!</strong>
+						<div class="free-shipping-inner">
+							<font style="color: red; font-size: 10px;">UK, US, Europe and selected countries in Asia.</font>
+						</div>
+					</div>
+					
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+									<div class="other-locations ">
+					<table>
+						<tbody><tr>
+							<td valign="middle">Also available on:</td>
+							<td valign="middle">
+															<img src="./Learning Dart   Packt Publishing_files/amazon-com.png">
+																<img src="./Learning Dart   Packt Publishing_files/amazon-co-uk.png">
+																<img src="./Learning Dart   Packt Publishing_files/barnes-noble.png">
+																<img src="./Learning Dart   Packt Publishing_files/safari_0.png">
+																<img src="./Learning Dart   Packt Publishing_files/oreilly_logo2.jpg">
+															</td>
+							<td valign="middle">
+								<form action="http://www.packtpub.com/learning-dart/0">
+									<select name="url" onchange="window.open($(this).val(), &#39;external_buy&#39;); javascript:_gaq.push([&#39;_trackPageview&#39;, &#39;/outbound/&#39; + $(this).val().replace(/^(https?|ftp|news|nntp|telnet|irc|ssh|sftp|webcal):\/\//i, &#39;&#39;).split(&#39;/&#39;).join(&#39;--&#39;)]);">
+										<option value="#" selected="selected">Select a store
+																				</option><option value="http://www.amazon.com/dp/1849697426/?tag=packtpubli-20">Amazon.com</option>
+																				<option value="http://www.amazon.co.uk/dp/1849697426/?tag=packtpubli-21">Amazon UK</option>
+																				<option value="http://www.barnesandnoble.com/s/?keyword=Learning+Dart+">Barnes &amp; Noble</option>
+																				<option value="http://my.safaribooksonline.com/9781849697422?cid=packt-cat-readnow-9781849697422">Safari Books Online</option>
+																				<option value="http://shop.oreilly.com/product/9781849697422.do">O Reilly</option>
+																			</select>
+								</form>
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+							<div class="clear"></div>
+		
+					
+		<div class="details-tabs">
+			<div class="tabs">
+				<a name="overview"></a>
+				<div class="tab active" id="tab-overview">Overview</div>
+									<div class="tab" id="tab-toc">Table of Contents</div>
+							
+				<a name="author"></a>
+				<div class="tab" id="tab-author">Author</div>
+									<a name="reviews"></a>
+					<div class="tab" id="tab-reviews">Reviews</div>
+								<div class="tab" id="tab-downloads">Support</div>
+				<div class="tab" id="tab-sample">Sample Chapters</div>
+								<div class="clear"></div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-panel active" id="panel-overview">
+					<div class="overview_left">
+						<div class="inner">
+							<ul>
+<li>Develop apps for the Web using Dart and HTML5 </li>
+<li>Build powerful HTML5 forms, validate and store data in local storage, and use web components to build your own user interface</li>
+<li>Make games by drawing and integrate audio and video in the browser</li>
+<li>Learn how to develop an application with the help of a model-driven and fast-paced approach</li>
+</ul>
+					
+						</div>
+					</div>
+					<div class="overview_right">
+						<div class="inner">
+							<h3>Book Details</h3>
+							<b>Language : </b> English<br>
+							
+															<b>Paperback : </b>388 pages [ 235mm x 191mm ]<br>
+														<b>Release Date : </b><span class="date-display-single">January 2014</span><br>
+							<b>ISBN : </b>1849697426<br>
+							<b>ISBN 13 : </b>9781849697422<br>
+							<b>Author(s) : </b><a href="http://www.packtpub.com/authors/profiles/dzenan-ridjanovic">Dzenan Ridjanovic</a>, <a href="http://www.packtpub.com/authors/profiles/ivo-balbaert">Ivo Balbaert</a><br>
+						        <b>Topics and Technologies : </b>
+							All Books, Application Development, Web Development						</div>				
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				<div class="tab-panel" id="panel-toc">
+					<p><span class="toc"><a name="soc"><br></a>
+</span></p><h2>Table of Contents</h2>
+<a href="http://www.packtpub.com/learning-dart/book#chapter_0">Preface</a><br><a href="http://www.packtpub.com/learning-dart/book#chapter_1">Chapter 1: Dart – A Modern Web Programming Language</a><br><a href="http://www.packtpub.com/learning-dart/book#chapter_2">Chapter 2: Getting to Work with Dart</a><br><a href="http://www.packtpub.com/learning-dart/book#chapter_3">Chapter 3: Structuring Code with Classes and Libraries</a><br><a href="http://www.packtpub.com/learning-dart/book#chapter_4">Chapter 4: Modeling Web Applications with Model Concepts and Dartlero</a><br><a href="http://www.packtpub.com/learning-dart/book#chapter_5">Chapter 5: Handling the DOM in a New Way</a><br><a href="http://www.packtpub.com/learning-dart/book#chapter_6">Chapter 6: Combining HTML5 Forms with Dart</a><br><a href="http://www.packtpub.com/learning-dart/book#chapter_7">Chapter 7: Building Games with HTML5 and Dart</a><br><a href="http://www.packtpub.com/learning-dart/book#chapter_8">Chapter 8: Developing Business Applications with Polymer Web Components</a><br><a href="http://www.packtpub.com/learning-dart/book#chapter_9">Chapter 9: Modeling More Complex Applications with Dartling</a><br><a href="http://www.packtpub.com/learning-dart/book#chapter_10">Chapter 10: MVC Web and UI Frameworks in Dart – An Overview</a><br><a href="http://www.packtpub.com/learning-dart/book#chapter_11">Chapter 11: Local Data and Client-Server Communication</a><br><a href="http://www.packtpub.com/learning-dart/book#chapter_12">Chapter 12: Data-driven Web Applications with MySQL and MongoDB</a><br><a href="http://www.packtpub.com/learning-dart/book#chapter_13">Index</a><br> 
+<ul>
+<li><a name="chapter_0">Preface</a></li>
+</ul>
+<div><a href="http://www.packtpub.com/learning-dart/book#soc">Up</a></div>
+<ul>
+<li><a name="chapter_1">Chapter 1: Dart – A Modern Web Programming Language</a>
+<ul>
+<li>What is Dart?</li>
+<li>Dart is a perfect fit for HTML5
+<ul>
+<li>A very short history of web programming</li>
+<li>Dart empowers the web client</li>
+<li>JavaScript is not the way to go for complex apps</li>
+<li>Google, GWT, and Dart</li>
+<li>Advantages of Dart</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Getting started with Dart
+<ul>
+<li>Installing the Dart Editor
+<ul>
+<li>Your first Dart program</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Getting a view on the Dart tool chain
+<ul>
+<li>The Dart execution model</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>A bird's eye view on Dart
+<ul>
+<li>Example 1 – raising rabbits
+<ul>
+<li>Extracting a function</li>
+<li>A web version</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Example 2 – banking</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Making a todo list with Dart</li>
+<li>Summary</li>
+</ul>
+</li>
+</ul>
+<ul>
+</ul>
+<div><a href="http://www.packtpub.com/learning-dart/book#soc">Up</a></div>
+<ul>
+<li><a name="chapter_2">Chapter 2: Getting to Work with Dart</a>
+<ul>
+<li>Variables – to type or not to type</li>
+<li>Built-in types and their methods
+<ul>
+<li>Conversions</li>
+<li>Operators</li>
+<li>Some useful String methods</li>
+<li>Dates and times</li>
+<li>Lists</li>
+<li>Maps</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Documenting your programs</li>
+<li>Changing the execution flow of a program</li>
+<li>Using functions in Dart
+<ul>
+<li>Return types</li>
+<li>Parameters</li>
+<li>First class functions</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Recognizing and catching errors and exceptions
+<ul>
+<li>Debugging exercise</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Summary</li>
+</ul>
+</li>
+</ul>
+<ul>
+</ul>
+<div><a href="http://www.packtpub.com/learning-dart/book#soc">Up</a></div>
+<ul>
+<li><a name="chapter_3">Chapter 3: Structuring Code with Classes and Libraries</a>
+<ul>
+<li>A touch of class – how to use classes and objects
+<ul>
+<li>Visibility – getters and setters</li>
+<li>Types of constructors
+<ul>
+<li>Named constructors</li>
+<li>factory constructors</li>
+<li>const constructors</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Inheritance
+<ul>
+<li>Abstract classes and methods</li>
+<li>The interface of a class – implementing interfaces</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Polymorphism and the dynamic nature of Dart</li>
+<li>Collection types and generics
+<ul>
+<li>Typing collections and generics</li>
+<li>The collection hierarchy and its functional nature</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Structuring your code using libraries
+<ul>
+<li>Using a library in an app</li>
+<li>Resolving name conflicts</li>
+<li>Visibility of objects outside a library</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Managing library dependencies with pub</li>
+<li>Unit testing in Dart</li>
+<li>Project – word frequency</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Summary</li>
+</ul>
+</li>
+</ul>
+<ul>
+</ul>
+<div><a href="http://www.packtpub.com/learning-dart/book#soc">Up</a></div>
+<ul>
+<li><a name="chapter_4">Chapter 4: Modeling Web Applications with Model Concepts and Dartlero</a>
+<ul>
+<li>A short introduction to Git and GitHub
+<ul>
+<li>Creating a repository on GitHub and a local version</li>
+<li>Collaborating on a GitHub project</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>What a model is and why we need it in programming</li>
+<li>Model concepts – a graphical design tool for our models
+<ul>
+<li>Working with model concepts
+<ul>
+<li>Explaining the model</li>
+<li>Drawing the model</li>
+<li>Exporting the model</li>
+<li>What is JSON? </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Dartlero – a simple domain model framework</li>
+<li>An example of using Dartlero</li>
+<li>The categories and links application</li>
+<li>Summary</li>
+</ul>
+</li>
+</ul>
+<ul>
+</ul>
+<div><a href="http://www.packtpub.com/learning-dart/book#soc">Up</a></div>
+<ul>
+<li><a name="chapter_5">Chapter 5: Handling the DOM in a New Way</a>
+<ul>
+<li>Finding elements and changing their attributes
+<ul>
+<li>Finding elements</li>
+<li>Changing the attributes of elements</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Creating and removing elements</li>
+<li>Handling events</li>
+<li>Manipulating the style of page elements</li>
+<li>Animating a game
+<ul>
+<li>Ping Pong using style(s)</li>
+<li>How to draw on a canvas – Ping Pong revisited
+<ul>
+<li>Spiral 1 – drawing a circle and a rectangle</li>
+<li>Spiral 2 – colored circles and rectangles</li>
+<li>Spiral 3 – moving a ball</li>
+<li>Spiral 4 – reorganizing the code</li>
+<li>Spiral 5 – a bouncing ball</li>
+<li>Spiral 6 – displaying the racket</li>
+<li>Spiral 7 – moving the racket using keys</li>
+<li>Spiral 8 – moving the racket using the mouse</li>
+<li>Spiral 9 – a real game</li>
+<li>Spiral 10 – title and replay</li>
+<li>Spiral 11 – the master version</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Summary</li>
+</ul>
+</li>
+</ul>
+<ul>
+</ul>
+<div><a href="http://www.packtpub.com/learning-dart/book#soc">Up</a></div>
+<ul>
+<li><a name="chapter_6">Chapter 6: Combining HTML5 Forms with Dart</a>
+<ul>
+<li>Spiral 1 – the power of HTML5 forms</li>
+<li>Spiral 2 – how to validate data with Dart
+<ul>
+<li>Validation in the model</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Spiral 3 – how to store data in local storage</li>
+<li>Spiral 4 – reading and showing data</li>
+<li>Spiral 5 – changing and updating data</li>
+<li>Spiral 6 – working with a list of bank accounts</li>
+<li>Summary</li>
+</ul>
+</li>
+</ul>
+<ul>
+</ul>
+<div><a href="http://www.packtpub.com/learning-dart/book#soc">Up</a></div>
+<ul>
+<li><a name="chapter_7">Chapter 7: Building Games with HTML5 and Dart</a>
+<ul>
+<li>The model for the memory game</li>
+<li>Spiral 1 – drawing the board</li>
+<li>Spiral 2 – drawing cells</li>
+<li>Spiral 3 – coloring the cells</li>
+<li>Spiral 4 – implementing the rules</li>
+<li>Spiral 5 – game logic (bringing in the time element)</li>
+<li>Spiral 6 – some finishing touches</li>
+<li>Spiral 7 – using images</li>
+<li>Adding audio to a web page</li>
+<li>Using an audio library – Collision clones</li>
+<li>Adding video to a web page</li>
+<li>Summary</li>
+</ul>
+</li>
+</ul>
+<ul>
+</ul>
+<div><a href="http://www.packtpub.com/learning-dart/book#soc">Up</a></div>
+<ul>
+<li><a name="chapter_8">Chapter 8: Developing Business Applications with Polymer Web Components</a>
+<ul>
+<li>How web components change web development</li>
+<li>Web components with Polymer.dart
+<ul>
+<li>Declaring and instantiating a web component</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Two-way data binding in Polymer.dart</li>
+<li>Creating the polymer_links project
+<ul>
+<li>Spiral s01</li>
+<li>Spiral s02</li>
+<li>Spiral s04</li>
+<li>Spiral s05</li>
+<li>Spiral s06</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Using Polymer for the category links project
+<ul>
+<li>Adding local storage</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Applying web components to the project tasks app
+<ul>
+<li>Add and remove Task propagations</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Summary</li>
+</ul>
+</li>
+</ul>
+<ul>
+</ul>
+<div><a href="http://www.packtpub.com/learning-dart/book#soc">Up</a></div>
+<ul>
+<li><a name="chapter_9">Chapter 9: Modeling More Complex Applications with Dartling</a>
+<ul>
+<li>The Dartling domain modeling framework</li>
+<li>Design of the Travel Impressions model in spirals</li>
+<li>Generating Travel Impressions code from the model </li>
+<li>Initializing the Travel Impressions model with Data</li>
+<li>Testing the Travel Impressions model</li>
+<li>Defining and using the MVC pattern</li>
+<li>The TodoMVC app
+<ul>
+<li>Spiral 0 – generating a class model</li>
+<li>Spiral 1 – adding todo tasks</li>
+<li>Spiral 2 – showing how many todo tasks left</li>
+<li>Spiral 3 – removing a single task and completed tasks</li>
+<li>Spiral 4 – editing todos (undo and redo)</li>
+<li>Spiral 5 – displaying completed, remaining, or all todos</li>
+<li>Spiral 6 – editing a task</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Summary</li>
+</ul>
+</li>
+</ul>
+<ul>
+</ul>
+<div><a href="http://www.packtpub.com/learning-dart/book#soc">Up</a></div>
+<ul>
+<li><a name="chapter_10">Chapter 10: MVC Web and UI Frameworks in Dart – An Overview</a>
+<ul>
+<li>DQuery</li>
+<li>Bootjack</li>
+<li>Dart Web Toolkit (DWT)
+<ul>
+<li>The dartling_dwt_todo_mvc_spirals project</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Dart widgets</li>
+<li>Bee</li>
+<li>HTML components</li>
+<li>Rikulo UI
+<ul>
+<li>Rikulo MVC</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Hipster-mvc</li>
+<li>Puremvc</li>
+<li>StageXL</li>
+<li>Flash Professional CC – toolkit for Dart</li>
+<li>Angular.dart</li>
+<li>Summary</li>
+</ul>
+</li>
+</ul>
+<ul>
+</ul>
+<div><a href="http://www.packtpub.com/learning-dart/book#soc">Up</a></div>
+<ul>
+<li><a name="chapter_11">Chapter 11: Local Data and Client-Server Communication</a>
+<ul>
+<li>The options for browser storage</li>
+<li>Asynchronous calls and Futures</li>
+<li>Using IndexedDB with Dart
+<ul>
+<li>Spiral s00</li>
+<li>Spiral s01</li>
+<li>Spiral s02</li>
+<li>Spiral s03</li>
+<li>Spiral s04</li>
+<li>Spiral s05</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Using Lawndart</li>
+<li>A Dart web server</li>
+<li>Using JSON web services
+<ul>
+<li>Spiral s07</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Summary</li>
+</ul>
+</li>
+</ul>
+<ul>
+</ul>
+<div><a href="http://www.packtpub.com/learning-dart/book#soc">Up</a></div>
+<ul>
+<li><a name="chapter_12">Chapter 12: Data-driven Web Applications with MySQL and MongoDB</a>
+<ul>
+<li>Database drivers for Dart</li>
+<li>Storing todo data in MySQL</li>
+<li>Dartlero tasks – a many-to-many model in MySQL
+<ul>
+<li>The JSON storage</li>
+<li>MySQL storage</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>MongoDB – a NoSQL database</li>
+<li>Using the mongo_dart driver to store the todo data in MongoDB</li>
+<li>Summary</li>
+</ul>
+</li>
+</ul>
+<ul>
+</ul>
+<div><a href="http://www.packtpub.com/learning-dart/book#soc">Up</a></div>
+<ul>
+<li><a name="chapter_13">Index</a></li>
+</ul>
+<p></p>				</div>
+				
+				<div class="tab-panel" id="panel-author">
+									<h3>Dzenan Ridjanovic</h3>
+					<div class="author-detail">
+						<p>Dzenan Ridjanovic is a university professor who is planning his early retirement to focus on the development of web applications with Dart, HTML5, web components, and NoSQL databases. For more than 10 years, he was a Director of Research and Development in the Silverrun team (http://www.silverrun.com/), which created several commercial tools for analysis, design, and development of data-driven applications. He was a principal developer of Modelibra (http://www.modelibra.org/) tools and frameworks for model-driven development in Java. Recently, he has been developing the Dartling framework for design and code generation of Dart models. His projects are at GitHub (https://github.com/dzenanr), where he is considered a Dart expert (http://osrc.dfm.io/dzenanr). He writes about his projects at On Dart blog (http://dzenanr.github.io/). His courses are available at On Dart Education (http://ondart.me/). He markets his Dart efforts at On Dart G+ Page (https://plus.google.com/+OndartMe). Dzenan Ridjanovic wrote a book in 2009, under the Creative Commons License, entitled Spiral Development of Dynamic Web Applications: Using Modelibra and Wicket (http://www.modelibra.org/).</p>					</div>
+										<hr>
+														<h3>Ivo Balbaert</h3>
+					<div class="author-detail">
+						<p>Ivo Balbaert is currently a lecturer for (Web) Programming and Databases at CVO Antwerpen (www.cvoantwerpen.be), a community college in Belgium. He received a Ph.D. in Applied Physics from University of Antwerp in 1986. He worked for 20 years in the software industry as a developer and consultant in several companies, and for 10 years as a project manager at the University Hospital of Antwerp. From 2000 onward, he switched to partly teaching and partly developing software (KHM Mechelen, CVO Antwerp). He also wrote an introductory book in Dutch about developing in Ruby and Rails: Programmeren met Ruby en Rails, Van Duuren Media, ISBN: 978-90-5940-365-9, 2009, 420 p. In 2012, he authored a book on the Go programming language: The Way To Go, IUniverse, ISBN: 978-1-4697-6917-2, 600 p.</p>					</div>
+													</div>
+				
+				<div class="tab-panel" id="panel-reviews">
+					<p><a title="It&#39;s a book covering many aspects to learn to use Dart for daily programming." href="http://www.grobmeier.de/learning-dart-16022014.html#.U3CPyKw5rEN">It's a book covering many aspects to learn to use Dart for daily programming.</a> - Christian Grobmeier</p>
+<p><a title="A good start to learn the language Dart." href="http://blog.morettoni.net/2014/02/learning-dart-review.html">A good start to learn the language Dart.</a> - Luca Morettoni</p>
+<p><a title="Neat and simple explanations.Walks through building different applications." href="http://beta.slashdot.org/submission/3387377/book-review-learning-dart">Neat and simple explanations.Walks through building different applications.</a> - Venke Vinj</p>
+<p><a title="If you&#39;re looking at this review chances are you&#39;re in need of a good book that can get you up to speed with Dart programming language, look no further!" href="https://www.goodreads.com/review/show/877969490?book_show_action=false">If you're looking at this review chances are you're in need of a good book that can get you up to speed with Dart programming language, look no further!</a> - Lidia Hocke</p>				</div>
+				
+				<div class="tab-panel" id="panel-downloads">
+	
+					
+						
+						<h3>Code Downloads</h3>
+						<p>Download the code and support files for this book.</p>
+						<form action="http://www.packtpub.com/lcode_download/14449" id="code-downloads-button" method="get">
+							<input type="submit" class="form-submit" value="Download now">
+						</form>
+						<hr>
+										<h3>Submit Errata</h3>
+						<p>Please let us know if you have found any errors not listed on this list by completing our <a href="http://www.packtpub.com/submit-errata?nid=Learning%20Dart%20">errata submission form</a>. Our editors will check them and add them to this list. Thank you.
+						</p>
+					
+											<hr>
+						<h3 class="inline">Errata</h3><span> - 3 submitted: last submission 12 May 2014</span>
+						<br>
+						<br>
+													<div class="erratum">
+								<div class="inner">
+									<p>Page no: 20 | Errata type: Code</p>
+<p>&nbsp;</p>
+<p><span>The given code is:</span></p>
+<p><span>import 'dart:math'</span></p>
+<p>&nbsp;</p>
+<p><span>It should be&nbsp;</span></p>
+<p>import 'dart:math';</p>								</div>
+							</div>
+													<div class="erratum">
+								<div class="inner">
+									<p>Page no: 26 | Errata type: Code</p>
+<p>&nbsp;</p>
+<p>The given code is:</p>
+<p>query Selector ("#submit").onClick.listen( (e) =&gt; calcRabbits() );</p>
+<p>&nbsp;</p>
+<p>It should be</p>
+<p>querySelector ("#submit").onClick.listen( (e) =&gt; calcRabbits() );</p>								</div>
+							</div>
+													<div class="erratum">
+								<div class="inner">
+									<p>Page no: 26 | Errata type: Technical</p>
+<p>&nbsp;</p>
+<p>The given sentence is:</p>
+<p>Here in lines (1) and (2), the input field and the output label are bound to the<br>variables in_years and output.</p>
+<p>&nbsp;</p>
+<p>It should be:</p>
+<p>Here in lines (1) and (2), the input field and the output label are bound to the<br>variables yearsInput and output.</p>								</div>
+							</div>
+																
+				</div>
+				<div class="tab-panel" id="panel-sample">
+										<h3>Sample chapters</h3>
+					<p>
+						You can view our sample chapters and prefaces of this title on 
+						<a target="_blank" href="http://packtlib.packtpub.com/library/9781849697422">PacktLib</a> or 
+						<a target="_blank" href="http://www.packtpub.com/sites/default/files/9781849697422_Chapter_05.pdf?utm_source=packtpub&utm_medium=free&utm_campaign=pdf">download sample chapters in PDF format</a>.
+					</p>
+					
+									</div>
+				<div class="tab-panel" id="panel-media">
+											 
+									</div>
+				
+			</div>
+		</div>
+		
+			
+		
+			
+		<div id="special_offers">
+	
+					<div id="special_offers_centre">
+				<div class="partner-offer">
+					<div class="inner">
+						<div class="centre">
+							<h2>Frequently bought together</h2>
+							<div class="partner-offer-left">
+								<img src="./Learning Dart   Packt Publishing_files/7422OT_Learning Dart(1).jpg" alt="Learning Dart " title="Learning Dart " class="bookimage" width="122" height="152">								<span class="largeplus">+</span>&nbsp;&nbsp;&nbsp;
+								<a href="http://www.packtpub.com/oracle-siebel-crm-8-developers-handbook/book">
+									<img src="./Learning Dart   Packt Publishing_files/1865EN_Oracle Siebel CRM 8-2 Developers Guide.jpg" alt="Oracle Siebel CRM 8 Developer&#39;s Handbook" title="Oracle Siebel CRM 8 Developer&#39;s Handbook" class="bookimage" width="125" height="151">								</a>
+								<span class="largeplus">=</span>
+							</div>
+							<div class="partner-offer-right">
+								<div class="offer-inner-left"> 
+									<span class="largefont">50% Off</span>
+									<br>
+									<span class="mediumfont">the second eBook</span>
+								</div>
+								<div class="offer-inner-right">
+										<div class="partner-offer-price">Price for both: <span class="red">
+																							  $53.70
+																					</span></div>								
+										<form action="http://www.packtpub.com/add_to_cart/14448/6754" accept-charset="UTF-8" method="post" id="packt-libraries-add-to-cart-form-partner-bundle">
+<div><input type="hidden" name="nids" id="nids" value="14448,6754">
+<input type="hidden" name="qtys" id="nids" value="1,1">
+<input type="image" name="submit-14448,6754" id="submit-14448,6754" value="" src="./Learning Dart   Packt Publishing_files/addtocart.gif" class="go_button, form-image form-image">
+<input type="hidden" name="upsell" id="edit-upsell" value="1">
+<input type="hidden" name="form_build_id" id="form-bd41d41463b5836b58649c4d4c8e4ad2" value="form-bd41d41463b5836b58649c4d4c8e4ad2">
+<input type="hidden" name="form_id" id="edit-packt-libraries-add-to-cart-form-partner-bundle" value="packt_libraries_add_to_cart_form_partner_bundle">
+
+</div></form>
+									</div>
+								<div class="clear"></div>
+								<p class="partner-offer-text">Buy both these recommended eBooks together and get 50% off the cheapest eBook.</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>	
+		</div>
+				
+		<div id="learn">
+			<div class="titlebar">
+				<h2>What you will learn from this book</h2>
+			</div>
+			<p></p><ul>
+<li>Structure your code using functions, classes, generics, packages, and libraries </li>
+<li>Model web applications with domain model frameworks </li>
+<li>Use the power of modern browsers for processing and storing data </li>
+<li>Build web games in HTML5 and code them in Dart </li>
+<li>Get an overview of the available UI and MVC frameworks to use with Dart</li>
+<li>Build the complex UI needed in business applications with Dart's Polymer framework based on web components</li>
+<li>Store your data with MongoDB, one of the most popular NoSQL databases, and access your MongoDB databases from Dart</li>
+</ul>
+<p></p>
+		</div>
+		
+		<div id="in_detail">
+			<div class="titlebar">
+				<h2>In Detail</h2>
+			</div>
+			<p></p><p>Dart is a new open source programming language for the Web. Developed by Google, Dart is gaining popularity and has a steadily growing community. It is a single language for both client and server that can be used with a wide range of devices, including phones, tablets, laptops, and servers. It encompasses the lessons that have been learned over the last two decades of web programming. Stop solving new challenges with the same old tools - let Dart show you a whole new way.</p>
+<p>"Learning Dart" provides you with a thorough overview of this new open source programming language. It will guide you step-by-step through building games and business applications for the Web, taking advantage of the power behind a modern language combined with HTML5.</p>
+<p>"Learning Dart" starts by exploring the Dart ecosystem. This is followed by two chapters that will show you everything you need to know about Dart's syntax and development principles. Throughout the rest of the book, you will apply this knowledge to advanced topics with the help of an example-based approach.</p>
+<p>You will explore how to build web games using HTML5, how to integrate audio and video into your applications, and how to process and show data in HTML5 forms with Dart. The book also shows you how web components fit together with HTML5 and how to apply them in business web applications. You also learn how to store data on the client, how to communicate data between client and server with JSON, and how to store JSON data with MongoDB.</p>
+<p>"Learning Dart" provides you with everything you need to know to start or enhance your career in web development.</p>
+<p></p>
+			<p></p>
+		</div>
+		
+		
+		<div id="approach">
+			<div class="titlebar">
+				<h2>Approach</h2>
+			</div>
+			<p>"Learning Dart" is a step-by-step guide that aims to give you hands-on knowledge about programming in Dart using an example-based approach.</p>
+		</div>			
+			
+		<div id="audience">
+			<div class="titlebar">
+				<h2>Who this book is for</h2>
+			</div>
+			<p></p><p>If you want to become a web developer, or perhaps you already are a web developer but you want to add Dart to your tool belt, then this book is for you. This book assumes that you have at least some knowledge of HTML and how web applications work. Some previous programming experience, preferably in a modern language like C#, Java, Python, Ruby, or JavaScript, will also give you a head start. You can also work with Dart on your preferred platform, be it Linux, Mac OS X, or Windows.</p>
+<p></p>
+		</div>
+		
+	
+	</div>
+	
+	<script>
+		jQuery(document).ready(function() {
+			$('div.tab').click(function() {
+				var tabID = this.id.replace('tab-', '');
+				$('div.tab').removeClass('active');
+		        $('#'+this.id).addClass('active');
+		        $('div.tab-panel').removeClass('active');
+		        $('div#panel-'+tabID).addClass('active');
+			});
+		});
+	</script><style>
+	
+	div.price-choice {
+	}
+	
+	div.price div.price-inner {
+		margin: 10px 10px 5px 10px;
+	}
+	
+	div.price.packt-upgrade {
+		background-color: #282828;
+		color: white;
+	}
+	
+	div.price.packt-upgrade span {
+		color: white;
+	}
+	
+	div.price span.packt-upgrade-title {
+		font-size: 1.6em;
+		font-weight: bold;
+	}
+	div.price span.packt-upgrade-subtitle {
+		font-size: 1.3em;
+	}
+	
+	div.price-choice.upgrade div.price-inner {
+		margin: 15px 10px 0em 10px;
+		height: 41px;
+	}
+	
+	div.price-right {
+		float: left;
+		width: 240px;
+		margin-top: 5px;
+	}
+	
+	div.price-right span {
+		font-size: 0.8em;
+	}
+	
+	div.price-right div.float-right {
+		margin-top: 3px;
+		margin-right: 10px;
+		width: 175px;
+	}
+	
+	div.price-right div.float-right input {
+		width: 175px;
+	}
+	</style>
+									        </div>
+									        <!-- /#content -->
+									
+
+									        									
+									        									        
+									    </div>
+								  		<!-- /#content-inner-inner -->
+							  		</div>
+							  		<!-- /#content-inner -->
+								</div> 
+								<!-- /#content -->
+							</div> 
+							<!-- #main -->
+						
+						    					        <div id="sidebar-right" class="region region-right">
+					        	
+<div id="block-addthis-0" class="block block-addthis region-odd odd region-count-1 count-5 chromeless">
+  <div class="block-inner">  
+    <div class="block-content">
+      <div class="block-content-inner">
+      	<p class="large">Share this page:</p>
+        <div class="addthis_toolbox addthis_default_style "><a class="addthis_toolbox_item addthis_button_facebook at300b" title="Facebook" href="http://www.packtpub.com/learning-dart/book#"><span class="at16nc at300bs at15nc at15t_facebook at16t_facebook"><span class="at_a11y">Share on facebook</span></span></a><a class="addthis_toolbox_item addthis_button_twitter at300b" title="Tweet" href="http://www.packtpub.com/learning-dart/book#"><span class="at16nc at300bs at15nc at15t_twitter at16t_twitter"><span class="at_a11y">Share on twitter</span></span></a><a class="addthis_toolbox_item addthis_button_linkedin at300b" href="http://www.addthis.com/bookmark.php?v=300&winname=addthis&pub=xa-4e2cfd1147868c4e&source=tbx-300&lng=en&s=linkedin&url=http%3A%2F%2Fwww.packtpub.com%2Flearning-dart%2Fbook&title=Learning%20Dart%20%7C%20Packt%20Publishing&ate=AT-xa-4e2cfd1147868c4e/-/-/539ab79d2d4bcce6/2&frommenu=1&uid=539ab79d357253d4&ct=1&tt=0&captcha_provider=nucaptcha" target="_blank" title="LinkedIn"><span class="at16nc at300bs at15nc at15t_linkedin at16t_linkedin"><span class="at_a11y">Share on linkedin</span></span></a><a class="addthis_toolbox_item addthis_button_reddit at300b" href="http://www.addthis.com/bookmark.php?v=300&winname=addthis&pub=xa-4e2cfd1147868c4e&source=tbx-300&lng=en&s=reddit&url=http%3A%2F%2Fwww.packtpub.com%2Flearning-dart%2Fbook&title=Learning%20Dart%20%7C%20Packt%20Publishing&ate=AT-xa-4e2cfd1147868c4e/-/-/539ab79d2d4bcce6/3&frommenu=1&uid=539ab79de0451ae6&ct=1&tt=0&captcha_provider=nucaptcha" target="_blank" title="Reddit"><span class="at16nc at300bs at15nc at15t_reddit at16t_reddit"><span class="at_a11y">Share on reddit</span></span></a><a class="addthis_toolbox_item addthis_button_google_plusone at300b"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 70px; height: 15px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 70px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 15px;" tabindex="0" vspace="0" width="100%" id="I0_1402648477649" name="I0_1402648477649" src="./Learning Dart   Packt Publishing_files/fastbutton.htm" data-gapiattached="true" title="+1"></iframe></div></a><div class="atclear"></div></div>      </div>
+    </div>
+  </div> 
+</div> <!-- /block -->
+
+
+
+<div id="block-block-117" class="block block-block region-even even region-count-2 count-6 chromeless">
+  <div class="block-inner">
+    
+  
+    <div class="block-content">
+      <div class="block-content-inner">
+        <p><a href="https://www.entrust.net/customer/profile.cfm?domain=www.packtpub.com" target="_blank" class="buy-with-confidence"></a></p>
+      </div>
+    </div>
+  </div> 
+</div> <!-- /block -->
+<div id="block-uc_cart-0" class="block block-uc_cart region-odd odd region-count-1 count-1"><div class="block-inner"><div class="block-heading"><h2 class="block-title"><a href="http://www.packtpub.com/cart" class="block-header-link">Your Shopping Cart</a></h2></div><div class="block-content"><div class="block-content-inner"><div id="cart-block-contents"><div class="no-items">There are no items in your cart.</div></div><div class="links"><span class="cart-block-checkout first last plinks"><a href="http://www.packtpub.com/cart/checkout" rel="nofollow">Checkout</a></span><div class="clear"></div></div></div></div></div></div>
+
+
+<div id="block-block-43" class="block block-block region-odd odd region-count-3 count-7 ">
+  <div class="block-inner">
+    
+    	<div class="block-heading">
+	    <h2 class="block-title">
+			
+		Submit an image				</h2>
+	</div>
+  
+    <div class="block-content">
+      <div class="block-content-inner">
+        <p align="center"><img src="./Learning Dart   Packt Publishing_files/Coming-Soon-Small.jpg" data-original="//dgdsbygo8mp3h.cloudfront.net/sites/default/files/banners/Coming-Soon-Small.jpg" height="93" width="75" alt="Cover Image" class="lazy" style="display: inline;"></p>
+<p align="center">Submit an image, and if we use it you’ll get <font color="red">$100</font>. To submit your images<a href="http://www.packtpub.com/article/submit-book-cover-images" target="_blank" style="color:#F68C23"> Click Here</a></p>
+      </div>
+    </div>
+  </div> 
+</div> <!-- /block -->
+					        </div>
+					        <!-- /#sidebar-right -->
+						  							  	
+							<div style="clear: both;"></div>
+						</div>
+						<!-- /#main-container -->
+						
+						
+												</div>
+					
+												<div id="footer" class="region region-footer">
+							
+
+
+<div id="block-block-30" class="block block-block region-odd even region-count-1 count-8 ">
+  <div class="block-inner">
+    
+    	<div class="block-heading">
+	    <h2 class="block-title">
+			
+		Footer Copyright				</h2>
+	</div>
+  
+    <div class="block-content">
+      <div class="block-content-inner">
+        <div><a href="http://www.packtpub.com/article/faq" class="packt-new-footer">FAQ</a> | <a href="http://www.packtpub.com/contact" class="packt-new-footer">Contact Us</a> | <a href="http://www.packtpub.com/about" class="packt-new-footer">About Us</a> | <a href="http://www.packtpub.com/ordering" class="packt-new-footer">Ordering Information</a> | <a href="http://www.packtpub.com/article/links" class="packt-new-footer">Recommended Links</a> | <a href="http://www.packtpub.com/article/packtpubcom_terms_and_conditions_of_use" class="packt-new-footer">Terms &amp; Conditions</a> | <a href="http://www.packtpub.com/about-us" class="packt-new-footer">Our Address</a></div>
+<p class="packt-new-footer2">This site requires cookies to be enabled in your browser. View Packt's cookie policy <a href="http://www.packtpub.com/page/packts-cookie-policy">here</a>. View Packt's privacy policy <a href="http://www.packtpub.com/article/packtpubcom_privacy_policy">here</a>.</p>
+      </div>
+    </div>
+  </div> 
+</div> <!-- /block -->
+							<div style="width:992px; clear: both; height: 340px"></div>
+						</div>
+												<!-- /#footer -->		
+				</div>
+			</div>
+			<div id="shadow-bottom"></div>
+	</div> 
+	<!--/#page -->
+
+	
+
+	<div id="awards-menu">
+		<div class="lower">
+			<div id="tab-overlay"></div>
+			<div style="width:120px;float:left">
+				<a href="http://www.packtpub.com/open-source-awards-home" class="title">Awards</a>
+				<a href="http://www.packtpub.com/open-source-awards-home/voting-stage">Voting</a>
+				<a href="http://www.packtpub.com/open-source-awards-home/nominations">Nominations</a>
+				<a href="http://www.packtpub.com/article/open-source-cms-award-previous-winners">Previous Winners</a>
+			</div>
+			<div style="width:180px;float:left">
+				<a href="http://www.packtpub.com/open-source-awards-home/open-source-awards-judges" class="title">Judges</a>
+				<a href="http://www.packtpub.com/open-source-awards-home/open-source-cms-award-judges">Open Source CMS</a>
+				<a href="http://www.packtpub.com/open-source-awards-home/hall-fame-judges">Hall Of Fame CMS</a>
+				<a href="http://www.packtpub.com/open-source-awards-home/most-promising-open-source-project-award-judges">Most Promising Open Source Project</a>
+				<a href="http://www.packtpub.com/open-source-awards-home/open-source-ecommerce-applications-judges">Open Source E-Commerce Applications</a>
+				<a href="http://www.packtpub.com/open-source-awards-home/open-source-javascript-library-judges">Open Source JavaScript Library</a>
+				<a href="http://www.packtpub.com/open-source-awards-home/open-source-graphics-software-judges">Open Source Graphics Software</a>
+			</div>
+	        <div style="width:180px;float:left">
+	            <div class="title">Resources</div>
+	            <a href="http://www.packtpub.com/open-source-awards-home/open-source-cms-resources">Open Source CMS</a>
+	            <a href="http://www.packtpub.com/open-source-awards-home/hall-of-fame-cms-resources">Hall Of Fame CMS</a>
+	            <a href="http://www.packtpub.com/open-source-awards-home/most-promising-open-source-project-resources">Most Promising Open Source Project</a>
+	            <a href="http://www.packtpub.com/open-source-awards-home/open-source-ecommerce-applications-resources">Open Source E-Commerce Applications</a>
+	            <a href="http://www.packtpub.com/open-source-awards-home/open-source-javascript-libraries-resources">Open Source JavaScript Library</a>
+	            <a href="http://www.packtpub.com/open-source-awards-home/open-source-graphic-software-resources">Open Source Graphics Software</a>
+	        </div>
+        </div>
+	</div>
+	
+	
+	<div style="width:980px;margin:0px auto">
+		
+	</div>
+
+	
+		
+	
+	<script type="text/javascript">
+		$(window).load(function() {
+        	$("img[data-original]").addClass("lazy");
+	        $("img.lazy").lazyload();
+			setTimeout(function() {
+				addthis_config = Drupal.settings.addthis.config_default; addthis_share = Drupal.settings.addthis.share_default;
+				if (typeof pageTracker != "undefined") {addthis_config.data_ga_tracker = pageTracker;}
+				var at = document.createElement("script"); at.type = "text/javascript"; at.async = true;
+				at.src = "//dgdsbygo8mp3h.cloudfront.net/sites/default/files/addthis/addthis_widget.js";
+				var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(at, s);
+			}, 5);
+			
+			
+			
+					});
+	</script>
+		
+		
+
+<div id="overlay" style="display: none;"></div>      <div id="lightbox" style="display: none;">        <div id="outerImageContainer" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><div id="modalContainer" style="display: none; padding: 10px;"></div><div id="frameContainer" style="display: none; padding: 10px;"></div><div id="imageContainer" style="display: none; padding: 10px;"><img id="lightboxImage"><div id="hoverNav"><a id="prevLink" href="http://www.packtpub.com/learning-dart/book#" style="padding-top: 10px;"></a><a id="nextLink" href="http://www.packtpub.com/learning-dart/book#" style="padding-top: 10px;"></a></div></div><div id="loading"><a href="http://www.packtpub.com/learning-dart/book#" id="loadingLink"></a></div></div>        <div id="imageDataContainer" class="clearfix" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">          <div id="imageData"><div id="frameHoverNav"><a id="framePrevLink" href="http://www.packtpub.com/learning-dart/book#" style="padding-top: 10px;"></a><a id="frameNextLink" href="http://www.packtpub.com/learning-dart/book#" style="padding-top: 10px;"></a></div><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><a id="bottomNavClose" href="http://www.packtpub.com/learning-dart/book#" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"></a><a id="bottomNavZoom" href="http://www.packtpub.com/learning-dart/book#"></a><a id="bottomNavZoomOut" href="http://www.packtpub.com/learning-dart/book#"></a><a id="lightshowPause" href="http://www.packtpub.com/learning-dart/book#" style="display: none;"></a><a id="lightshowPlay" href="http://www.packtpub.com/learning-dart/book#" style="display: none;"></a></div></div>        </div>      </div><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; z-index: 100000;"><iframe id="_atssh92" title="AddThis utility frame" src="./Learning Dart   Packt Publishing_files/sh159.htm" style="height: 1px; width: 1px; position: absolute; z-index: 100000; border: 0px; left: 0px; top: 0px;"></iframe></div><script type="text/javascript" src="./Learning Dart   Packt Publishing_files/core131.js"></script><iframe name="oauth2relay731309828" id="oauth2relay731309828" src="./Learning Dart   Packt Publishing_files/postmessageRelay.htm" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>

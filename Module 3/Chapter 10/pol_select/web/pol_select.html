@@ -1,0 +1,14 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<polymer-element name="pol-select">
+   <template>
+    <select selectedIndex="{{selected}}" value="{{value}}">
+      <option template repeat="{{comp in companies}}">{{comp}}</option>
+    </select>
+    <div>
+      You selected company {{selected}} <br/>
+      or from index:   {{companies[selected]}} <br/>
+      or from binding: {{value}}
+    </div>
+  </template>
+   <script type="application/dart" src="pol_select.dart"></script>
+</polymer-element>

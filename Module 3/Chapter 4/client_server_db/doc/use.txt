@@ -1,0 +1,25 @@
+Use
+
++ server does not save data in a real database
++ server keeps data in memory while it is running
++ client uses locally IndexedDB
++ client starts by loading data from IndexedDB
++ local data saved in IndexedDB by default
++ client has 2 buttons: To server and From server
++ To server (POST) integrates local tasks to data on the server
++ From server (GET) integrates server data to local tasks
+
+1. run server first (bin/server.dart) in Dart Editor:
+   it runs when you see in the server.dart tab in Dart Editor:
+   Listening for GET and POST on http://127.0.0.1:8080
+   if it does not run, use Run/Manage Launches
+2. run client (web/app.html) in Dartium
+3. run client as JavaScript (web/app.html) in Chrome
+4. use the tasks app in Dartium:
+   4.1 From server to integrate server data locally
+   4.2 add, remove and update tasks (saved locally in IndexedDB by default)
+   4.3 To server to integrate local data to server
+5. use the tasks app in Chrome:
+   5.1 From server to integrate server data locally
+   5.2 add, remove and update tasks (saved locally in IndexedDB by default)
+   5.3 To server to integrate local data to server

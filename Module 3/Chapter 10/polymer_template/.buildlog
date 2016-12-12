@@ -1,0 +1,76 @@
+---
+build.dart --machine --full
+Uncaught Error: FileSystemException: Cannot open file, path = 'F:\Dartiverse\ADartCookbook\book\Chapter 10 - Polymer Dart recipes\code\polymer_template\packages\args\args.dart' (OS Error: Het systeem kan het opgegeven bestand niet vinden.
+, errno = 2)
+Stack Trace: 
+#0      _File.open.<anonymous closure> (dart:io/file_impl.dart:349)
+#1      _rootRunUnary (dart:async/zone.dart:730)
+#2      _RootZone.runUnary (dart:async/zone.dart:864)
+#3      _Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:488)
+#4      _Future._propagateToListeners (dart:async/future_impl.dart:571)
+#5      _Future._completeWithValue (dart:async/future_impl.dart:331)
+#6      _Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:393)
+#7      _asyncRunCallbackLoop (dart:async/schedule_microtask.dart:23)
+#8      _asyncRunCallback (dart:async/schedule_microtask.dart:32)
+#9      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:128)
+
+
+Unhandled exception:
+FileSystemException: Cannot open file, path = 'F:\Dartiverse\ADartCookbook\book\Chapter 10 - Polymer Dart recipes\code\polymer_template\packages\args\args.dart' (OS Error: Het systeem kan het opgegeven bestand niet vinden.
+, errno = 2)
+#0      _rootHandleUncaughtError.<anonymous closure>.<anonymous closure> (dart:async/zone.dart:713)
+#1      _asyncRunCallbackLoop (dart:async/schedule_microtask.dart:23)
+#2      _asyncRunCallback (dart:async/schedule_microtask.dart:32)
+#3      _asyncRunCallback (dart:async/schedule_microtask.dart:36)
+#4      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:128)
+build.dart finished [446 ms]
+
+---
+build.dart --machine --full
+Uncaught Error: FileSystemException: Cannot open file, path = 'F:\Dartiverse\ADartCookbook\book\Chapter 10 - Polymer Dart recipes\code\polymer_template\packages\args\args.dart' (OS Error: Het systeem kan het opgegeven bestand niet vinden.
+, errno = 2)
+Stack Trace: 
+#0      _File.open.<anonymous closure> (dart:io/file_impl.dart:349)
+#1      _rootRunUnary (dart:async/zone.dart:730)
+#2      _RootZone.runUnary (dart:async/zone.dart:864)
+#3      _Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:488)
+#4      _Future._propagateToListeners (dart:async/future_impl.dart:571)
+#5      _Future._completeWithValue (dart:async/future_impl.dart:331)
+#6      _Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:393)
+#7      _asyncRunCallbackLoop (dart:async/schedule_microtask.dart:23)
+#8      _asyncRunCallback (dart:async/schedule_microtask.dart:32)
+#9      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:128)
+
+
+Unhandled exception:
+FileSystemException: Cannot open file, path = 'F:\Dartiverse\ADartCookbook\book\Chapter 10 - Polymer Dart recipes\code\polymer_template\packages\args\args.dart' (OS Error: Het systeem kan het opgegeven bestand niet vinden.
+, errno = 2)
+#0      _rootHandleUncaughtError.<anonymous closure>.<anonymous closure> (dart:async/zone.dart:713)
+#1      _asyncRunCallbackLoop (dart:async/schedule_microtask.dart:23)
+#2      _asyncRunCallback (dart:async/schedule_microtask.dart:32)
+#3      _asyncRunCallback (dart:async/schedule_microtask.dart:36)
+#4      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:128)
+build.dart finished [433 ms]
+
+---
+build.dart --machine --full
+unexpected error invoking 'pub':
+{"packages":{"polymer_template":"F:\\Dartiverse\\ADartCookbook\\book\\Chapter 10 - Polymer Dart recipes\\code\\polymer_template\\lib","args":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\args-0.11.0+1\\lib","browser":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\browser-0.10.0+2\\lib","collection":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\collection-0.9.4\\lib","barback":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\barback-0.14.0+3\\lib","code_transformers":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\code_transformers-0.1.5\\lib","csslib":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\csslib-0.10.0+1\\lib","template_binding":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\template_binding-0.11.0\\lib","polymer":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\polymer-0.11.0+5\\lib","stack_trace":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\stack_trace-0.9.3+2\\lib","smoke":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\smoke-0.1.0+1\\lib","html5lib":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\html5lib-0.11.0+1\\lib","path":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\path-1.2.1\\lib","utf":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\utf-0.9.0\\lib","logging":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\logging-0.9.1+1\\lib","observe":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\observe-0.10.1+2\\lib","yaml":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\yaml-1.1.1\\lib","string_scanner":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\string_scanner-0.0.3\\lib","web_components":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\web_components-0.4.0\\lib","source_maps":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\source_maps-0.9.3\\lib","polymer_expressions":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\polymer_expressions-0.11.2\\lib","analyzer":"C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\hosted\\pub.dartlang.org\\analyzer-0.15.7\\lib"},"input_files":["F:\\Dartiverse\\ADartCookbook\\book\\Chapter 10 - Polymer Dart recipes\\code\\polymer_template\\pubspec.lock"]}
+{"error":"FileSystemException: Deletion failed, path = 'C:\\Users\\CVO\\AppData\\Roaming\\Pub\\Cache\\_temp' (OS Error: Het systeem kan het opgegeven bestand niet vinden.\r\n, errno = 2)"}
+build.dart finished [1212 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [1785 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2169 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [3354 ms]
+

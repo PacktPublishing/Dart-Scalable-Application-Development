@@ -1,0 +1,21 @@
+Done
+
++ client-server folder reorganization with shared model
+
++ resolve a sporadic error in addTask from s06 that becomes addTaskMap in s07:
+  Uncaught Error: Instance of 'Event'
+  Exception: Instance of 'Event'
+
++ To server (POST) integrates local tasks to data on the server
++ From server (GET) integrates server data to local tasks
++ test 2 clients with the server
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,337 @@
+---
+build.dart --machine --full
+
+build.dart finished [3291 ms]
+
+---
+build.dart --machine --changed=web\pol_intl.html
+[{"method":"warning","params":{"file":"web/pol_intl.html","message":"couldn't find imported asset \"web/localized.html\" in package \"pol_intl\".","line":10,"charStart":323,"charEnd":364}}]
+[{"method":"warning","params":{"file":"web/pol_intl.html","message":"definition for Polymer element with tag name \"localized-example\" not found.","line":17,"charStart":607,"charEnd":626}}]
+build.dart finished [2209 ms]
+
+---
+build.dart --machine --changed=web\localized.html --removed=web\clickcounter.html
+[{"method":"warning","params":{"file":"web/pol_intl.html","message":"definition for Polymer element with tag name \"localized-example\" not found.","line":17,"charStart":607,"charEnd":626}}]
+build.dart finished [2765 ms]
+
+---
+build.dart --machine --changed=web\localized.dart --removed=web\clickcounter.dart
+[{"method":"warning","params":{"file":"web/pol_intl.html","message":"definition for Polymer element with tag name \"localized-example\" not found.","line":17,"charStart":607,"charEnd":626}}]
+build.dart finished [2365 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml --changed=web\localized.dart --changed=web\localized.html
+
+build.dart finished [3484 ms]
+
+---
+build.dart --machine --changed=web\messages_all.dart
+
+build.dart finished [2819 ms]
+
+---
+build.dart --machine --changed=web\messages_all.dart
+
+build.dart finished [2254 ms]
+
+---
+build.dart --machine --changed=web\intl_messages.json
+
+build.dart finished [2805 ms]
+
+---
+build.dart --machine --changed=web\intl_messages.json
+
+build.dart finished [3055 ms]
+
+---
+build.dart --machine --changed=web\messages_fr.dart
+
+build.dart finished [1870 ms]
+
+---
+build.dart --machine --changed=web\messages_fr.dart
+
+build.dart finished [2643 ms]
+
+---
+build.dart --machine --changed=web\messages_pt.dart
+
+build.dart finished [2751 ms]
+
+---
+build.dart --machine --changed=web\messages_pt.dart
+
+build.dart finished [2889 ms]
+
+---
+build.dart --machine --changed=web\translation_fr.json
+
+build.dart finished [3300 ms]
+
+---
+build.dart --machine --changed=web\translation_fr.json
+
+build.dart finished [2732 ms]
+
+---
+build.dart --machine --changed=web\translation_pt.json
+
+build.dart finished [1856 ms]
+
+---
+build.dart --machine --changed=web\translation_pt.json
+
+build.dart finished [2696 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2956 ms]
+
+---
+build.dart --machine --changed=web\localized.html
+
+build.dart finished [3125 ms]
+
+---
+build.dart --machine --changed=web\localized.dart --changed=web\localized.html --changed=web\pol_intl.html
+
+build.dart finished [3265 ms]
+
+---
+build.dart --machine --changed=web\localized.dart
+
+build.dart finished [2266 ms]
+
+---
+build.dart --machine --changed=web\localized_text.html --removed=web\localized.html
+[{"method":"warning","params":{"file":"web/pol_intl.html","message":"couldn't find imported asset \"web/localized.html\" in package \"pol_intl\".","line":10,"charStart":323,"charEnd":364}}]
+[{"method":"warning","params":{"file":"web/pol_intl.html","message":"definition for Polymer element with tag name \"localized-example\" not found.","line":17,"charStart":607,"charEnd":626}}]
+build.dart finished [2483 ms]
+
+---
+build.dart --machine --changed=web\localized.dart --changed=web\localized_text.html --changed=web\pol_intl.html
+[{"method":"warning","params":{"file":"web/pol_intl.html","message":"definition for Polymer element with tag name \"localized-text\" not found.","line":17,"charStart":612,"charEnd":628}}]
+build.dart finished [2829 ms]
+
+---
+build.dart --machine --changed=web\localized_text.dart --removed=web\localized.dart
+[{"method":"warning","params":{"file":"web/pol_intl.html","message":"definition for Polymer element with tag name \"localized-text\" not found.","line":17,"charStart":612,"charEnd":628}}]
+build.dart finished [2188 ms]
+
+---
+build.dart --machine --changed=web\localized_text.dart
+[{"method":"warning","params":{"file":"web/pol_intl.html","message":"definition for Polymer element with tag name \"localized-text\" not found.","line":17,"charStart":612,"charEnd":628}}]
+build.dart finished [2750 ms]
+
+---
+build.dart --machine --changed=web\localized_text.html
+
+build.dart finished [2614 ms]
+
+---
+build.dart --machine --changed=web\localized_text.html
+
+build.dart finished [3056 ms]
+
+---
+build.dart --machine --changed=web\localized_text.html
+
+build.dart finished [2783 ms]
+
+---
+build.dart --machine --changed=web\localized_text.html
+
+build.dart finished [2545 ms]
+
+---
+build.dart --machine --changed=web\localized_text.html --changed=web\messages_all.dart
+
+build.dart finished [2756 ms]
+
+---
+build.dart --machine --changed=web\messages_all.dart
+
+build.dart finished [2466 ms]
+
+---
+build.dart --machine --changed=web\messages_nl.dart
+
+build.dart finished [2181 ms]
+
+---
+build.dart --machine --changed=web\messages_nl.dart
+
+build.dart finished [2142 ms]
+
+---
+build.dart --machine --changed=web\localized_text.dart --changed=web\localized_text.html
+
+build.dart finished [2535 ms]
+
+---
+build.dart --machine --changed=web\intl_messages.json
+
+build.dart finished [2475 ms]
+
+---
+build.dart --machine --changed=web\messages_all.dart --changed=web\messages_de.dart --removed=web\messages_pt.d...
+
+build.dart finished [2196 ms]
+
+---
+build.dart --machine --changed=web\messages_it.dart
+
+build.dart finished [2472 ms]
+
+---
+build.dart --machine --changed=web\localized_text.html --changed=web\messages_all.dart --changed=web\messages_i...
+
+build.dart finished [2738 ms]
+
+---
+build.dart --machine --changed=web\localized_text.dart --changed=web\messages_it.dart
+
+build.dart finished [2498 ms]
+
+---
+build.dart --machine --changed=web\messages_fr.dart
+
+build.dart finished [3439 ms]
+
+---
+build.dart --machine --changed=web\messages_de.dart --changed=web\messages_it.dart --changed=web\messages_nl.da...
+
+build.dart finished [2752 ms]
+
+---
+build.dart --machine --changed=web\messages_de.dart
+
+build.dart finished [2453 ms]
+
+---
+build.dart --machine --changed=web\messages_de.dart --changed=web\messages_fr.dart --changed=web\messages_it.da...
+
+build.dart finished [2504 ms]
+
+---
+build.dart --machine --changed=web\messages_nl.dart
+
+build.dart finished [2248 ms]
+
+---
+build.dart --machine --changed=web\messages_jp.dart
+
+build.dart finished [1857 ms]
+
+---
+build.dart --machine --changed=web\messages_jp.dart --changed=web\messages_nl.dart
+
+build.dart finished [2457 ms]
+
+---
+build.dart --machine --changed=web\localized_text.html --changed=web\translation_fr.json
+
+build.dart finished [2517 ms]
+
+---
+build.dart --machine --changed=web\localized_text.html
+
+build.dart finished [2485 ms]
+
+---
+build.dart --machine --changed=web\messages_all.dart
+
+build.dart finished [2839 ms]
+
+---
+build.dart --machine --changed=web\translation_nl.json --removed=web\translation_pt.json
+
+build.dart finished [1882 ms]
+
+---
+build.dart --machine --changed=web\translation_nl.json
+
+build.dart finished [2780 ms]
+
+---
+build.dart --machine --changed=web\translation_de.json
+
+build.dart finished [2159 ms]
+
+---
+build.dart --machine --changed=web\translation_de.json
+
+build.dart finished [2140 ms]
+
+---
+build.dart --machine --changed=web\translation_it.json
+
+build.dart finished [2475 ms]
+
+---
+build.dart --machine --changed=web\translation_it.json
+
+build.dart finished [1843 ms]
+
+---
+build.dart --machine --changed=web\translation_jp.json
+
+build.dart finished [2741 ms]
+
+---
+build.dart --machine --changed=web\translation_jp.json
+
+build.dart finished [2550 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2605 ms]
+
+---
+build.dart --machine --changed=web\localized_text.dart
+
+build.dart finished [2694 ms]
+
+---
+build.dart --machine --changed=web\localized_text.dart
+
+build.dart finished [2421 ms]
+
+---
+build.dart --machine --changed=extract_json.dart
+
+build.dart finished [2778 ms]
+
+---
+build.dart --machine --changed=extract_json.dart
+
+build.dart finished [2460 ms]
+
+---
+build.dart --machine --changed=web\generate_from_json.dart
+
+build.dart finished [3371 ms]
+
+---
+build.dart --machine --changed=generate_from_json.dart --removed=web\generate_from_json.dart
+
+build.dart finished [2698 ms]
+
+---
+build.dart --machine --changed=generate_from_json.dart
+
+build.dart finished [2113 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [3073 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2017 ms]
+

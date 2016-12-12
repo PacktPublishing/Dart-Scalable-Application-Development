@@ -1,0 +1,506 @@
+---
+build.dart --machine --full
+
+build.dart finished [2897 ms]
+
+---
+build.dart --machine --full
+[{"method":"warning","params":{"file":"web/binding_repeat_list/my_element.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../packages/polymer/polymer.html\">.","line":1,"charStart":0,"charEnd":35}}]
+build.dart finished [2479 ms]
+
+---
+build.dart --machine --changed=web\binding_repeat_list\index.html
+[{"method":"warning","params":{"file":"web/binding_repeat_list/my_element.html","message":"Missing definition for <polymer-element>, please add the following HTML import at the top of this file: <link rel=\"import\" href=\"../packages/polymer/polymer.html\">.","line":1,"charStart":0,"charEnd":35}}]
+build.dart finished [2913 ms]
+
+---
+build.dart --machine --changed=web\binding_repeat_list\my_element.html
+
+build.dart finished [2392 ms]
+
+---
+build.dart --machine --changed=web\binding_repeat_list\index.html
+
+build.dart finished [2667 ms]
+
+---
+build.dart --machine --changed=web\binding_repeat_map\index.html --changed=web\binding_repeat_map\my_element.da...
+
+build.dart finished [2326 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2803 ms]
+
+---
+build.dart --machine --changed=web\binding_repeat_list\my_element.dart --changed=web\binding_repeat_list\my_ele...
+[{"method":"warning","params":{"file":"web/binding_repeat_list/index.html","message":"definition for Polymer element with tag name \"my-element\" not found.","line":16,"charStart":553,"charEnd":565}}]
+build.dart finished [2450 ms]
+
+---
+build.dart --machine --changed=web\binding_repeat_list\my_example.html --removed=web\binding_repeat_list\my_ele...
+[{"method":"warning","params":{"file":"web/binding_repeat_list/index.html","message":"couldn't find imported asset \"web/binding_repeat_list/my_element.html\" in package \"databinding\".","line":10,"charStart":301,"charEnd":343}}]
+[{"method":"warning","params":{"file":"web/binding_repeat_list/index.html","message":"definition for Polymer element with tag name \"my-element\" not found.","line":16,"charStart":553,"charEnd":565}}]
+build.dart finished [2045 ms]
+
+---
+build.dart --machine --changed=web\binding_repeat_list\my_exemple.dart --removed=web\binding_repeat_list\my_ele...
+[{"method":"warning","params":{"file":"web/binding_repeat_list/index.html","message":"couldn't find imported asset \"web/binding_repeat_list/my_element.html\" in package \"databinding\".","line":10,"charStart":301,"charEnd":343}}]
+[{"method":"warning","params":{"file":"web/binding_repeat_list/index.html","message":"definition for Polymer element with tag name \"my-element\" not found.","line":16,"charStart":553,"charEnd":565}}]
+build.dart finished [2602 ms]
+
+---
+build.dart --machine --changed=web\binding_repeat_list\index.html
+[{"method":"warning","params":{"file":"web/binding_repeat_list/index.html","message":"definition for Polymer element with tag name \"my-element\" not found.","line":16,"charStart":553,"charEnd":565}}]
+build.dart finished [2688 ms]
+
+---
+build.dart --machine --changed=web\binding_repeat_list\index.html
+
+build.dart finished [2704 ms]
+
+---
+build.dart --machine --changed=web\binding_repeat_list\my_example.dart --removed=web\binding_repeat_list\my_exe...
+
+build.dart finished [2322 ms]
+
+---
+build.dart --machine --changed=web\binding_repeat_list\my_example.html
+[{"method":"warning","params":{"file":"web/binding_repeat_list/my_example.html","message":"Unexpected character after attribute value.","line":5,"charStart":121,"charEnd":160}}]
+[{"method":"warning","params":{"file":"web/binding_repeat_list/my_example.html","message":"Invalid character in attribute name","line":5,"charStart":121,"charEnd":160}}]
+build.dart finished [2418 ms]
+
+---
+build.dart --machine --changed=web\binding_repeat_list\my_example.html
+
+build.dart finished [2639 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2629 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [2411 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [2545 ms]
+
+---
+build.dart --machine --clean
+
+build.dart finished [2281 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2036 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [1755 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [2089 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2832 ms]
+
+---
+build.dart --machine --changed=web\list.html --removed=web\my_example.html
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/my_example.html\" in package \"databinding_list\".","line":10,"charStart":301,"charEnd":343}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"my-example\" not found.","line":16,"charStart":553,"charEnd":565}}]
+build.dart finished [2029 ms]
+
+---
+build.dart --machine --changed=web\index.html
+
+build.dart finished [2360 ms]
+
+---
+build.dart --machine --changed=web\list.dart --removed=web\my_example.dart
+
+build.dart finished [1833 ms]
+
+---
+build.dart --machine --changed=web\index.html
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/pol_list.html\" in package \"databinding_list\".","line":10,"charStart":301,"charEnd":341}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"my-example\" not found.","line":16,"charStart":551,"charEnd":563}}]
+build.dart finished [1764 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html --removed=web\list.html
+
+build.dart finished [2052 ms]
+
+---
+build.dart --machine --changed=web\index.html
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"pol-list\" not found.","line":16,"charStart":551,"charEnd":561}}]
+build.dart finished [2326 ms]
+
+---
+build.dart --machine --changed=web\pol_list.dart --removed=web\list.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"pol-list\" not found.","line":16,"charStart":551,"charEnd":561}}]
+build.dart finished [1772 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+
+build.dart finished [2438 ms]
+
+---
+build.dart --machine --changed=web\pol_list.dart
+
+build.dart finished [1759 ms]
+
+---
+build.dart --machine --changed=web\pol_list.dart
+
+build.dart finished [2287 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [1889 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+
+build.dart finished [1987 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+
+build.dart finished [2285 ms]
+
+---
+build.dart --machine --changed=web\pol_list.dart
+
+build.dart finished [2618 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+
+build.dart finished [2079 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+
+build.dart finished [2350 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+[{"method":"warning","params":{"file":"web/pol_list.html","message":"Unexpected end tag (template). Ignored.","line":10,"charStart":327,"charEnd":338}}]
+[{"method":"warning","params":{"file":"web/pol_list.html","message":"Unexpected end tag (polymer-element). Ignored.","line":12,"charStart":403,"charEnd":421}}]
+[{"method":"warning","params":{"file":"web/pol_list.html","message":"Expected closing tag. Unexpected end of file.","line":3,"charStart":93,"charEnd":103}}]
+build.dart finished [2041 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+
+build.dart finished [2280 ms]
+
+---
+build.dart --machine --changed=web\pol_list.dart
+
+build.dart finished [2352 ms]
+
+---
+build.dart --machine --changed=web\pol_list.dart --changed=web\pol_list.html
+
+build.dart finished [2737 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+
+build.dart finished [2740 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+
+build.dart finished [3686 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+
+build.dart finished [3837 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+
+build.dart finished [2970 ms]
+
+---
+build.dart --machine --changed=web\pol_list.dart --changed=web\pol_list.html
+
+build.dart finished [2701 ms]
+
+---
+build.dart --machine --changed=web\pol_list.dart
+
+build.dart finished [3377 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+
+build.dart finished [3185 ms]
+
+---
+build.dart --machine --changed=web\pol_list.dart
+
+build.dart finished [3004 ms]
+
+---
+build.dart --machine --changed=web\pol_list.dart
+
+build.dart finished [3417 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+
+build.dart finished [2426 ms]
+
+---
+build.dart --machine --changed=web\pol_list.dart
+
+build.dart finished [3603 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+
+build.dart finished [3726 ms]
+
+---
+build.dart --machine --changed=web\pol_list.html
+
+build.dart finished [2681 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [3613 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [2106 ms]
+
+---
+build.dart --machine --changed=web\index.html
+[{"method":"warning","params":{"file":"web/index.html","message":"couldn't find imported asset \"web/pol_events.html\" in package \"event_handling\".","line":10,"charStart":301,"charEnd":343}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"pol-events\" not found.","line":16,"charStart":553,"charEnd":565}}]
+build.dart finished [1760 ms]
+
+---
+build.dart --machine --changed=web\pol_events.html --removed=web\pol_list.html
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"pol-events\" not found.","line":16,"charStart":553,"charEnd":565}}]
+build.dart finished [1747 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart --removed=web\pol_list.dart
+[{"method":"warning","params":{"file":"web/index.html","message":"definition for Polymer element with tag name \"pol-events\" not found.","line":16,"charStart":553,"charEnd":565}}]
+build.dart finished [2728 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart --changed=web\pol_events.html
+
+build.dart finished [2076 ms]
+
+---
+build.dart --machine --changed=web\pol_events.html
+
+build.dart finished [2361 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart --changed=web\pol_events.html
+
+build.dart finished [2407 ms]
+
+---
+build.dart --machine --changed=web\pol_events.html
+
+build.dart finished [2439 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart
+
+build.dart finished [2047 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2517 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart
+
+build.dart finished [2340 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart
+
+build.dart finished [2345 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart
+
+build.dart finished [2098 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart
+
+build.dart finished [2422 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart --changed=web\pol_events.html
+
+build.dart finished [1782 ms]
+
+---
+build.dart --machine --changed=web\pol_events.html
+
+build.dart finished [2123 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart
+
+build.dart finished [2792 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart --changed=web\pol_events.html
+
+build.dart finished [1763 ms]
+
+---
+build.dart --machine --changed=web\pol_events.html
+
+build.dart finished [2168 ms]
+
+---
+build.dart --machine --changed=web\pol_events.html
+
+build.dart finished [2392 ms]
+
+---
+build.dart --machine --changed=web\pol_events.html
+
+build.dart finished [2382 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart
+
+build.dart finished [2058 ms]
+
+---
+build.dart --machine --changed=web\pol_events.html
+[{"method":"warning","params":{"file":"web/pol_events.html","message":"Unexpected character after attribute value.","line":12,"charStart":464,"charEnd":506}}]
+[{"method":"warning","params":{"file":"web/pol_events.html","message":"Invalid character in attribute name","line":12,"charStart":464,"charEnd":510}}]
+error running barback: Transform polymer (Linter) on event_handling|web/pol_events.html threw error: type 'ParseErrorToken' is not a subtype of type 'StartTagToken' in type cast.
+package:html5lib/dom.dart 328:35              Node._ensureAttributeSpans
+package:html5lib/dom.dart 175:26              Node.attributeSpans
+package:polymer/src/build/linter.dart 405:22  _LinterVisitor._validateEventHandler
+package:polymer/src/build/linter.dart 316:30  _LinterVisitor._validateNormalElement.<fn>
+dart:collection                               _HashMap&&_LinkedHashMapMixin.forEach
+package:polymer/src/build/linter.dart 314:28  _LinterVisitor._validateNormalElement
+package:polymer/src/build/linter.dart 177:32  _LinterVisitor.visitElement
+package:html5lib/dom_parsing.dart 12:50       TreeVisitor.visit
+package:html5lib/dom_parsing.dart 24:49       TreeVisitor.visitChildren
+package:html5lib/dom_parsing.dart 30:48       TreeVisitor.visitNodeFallback
+package:html5lib/dom_parsing.dart 39:50       TreeVisitor.visitElement
+package:polymer/src/build/linter.dart 178:28  _LinterVisitor.visitElement
+package:html5lib/dom_parsing.dart 12:50       TreeVisitor.visit
+package:html5lib/dom_parsing.dart 24:49       TreeVisitor.visitChildren
+package:html5lib/dom_parsing.dart 30:48       TreeVisitor.visitNodeFallback
+package:html5lib/dom_parsing.dart 39:50       TreeVisitor.visitElement
+package:polymer/src/build/linter.dart 178:28  _LinterVisitor.visitElement
+package:html5lib/dom_parsing.dart 12:50       TreeVisitor.visit
+package:html5lib/dom_parsing.dart 24:49       TreeVisitor.visitChildren
+package:html5lib/dom_parsing.dart 30:48       TreeVisitor.visitNodeFallback
+package:html5lib/dom_parsing.dart 39:50       TreeVisitor.visitElement
+package:polymer/src/build/linter.dart 272:23  _LinterVisitor._validatePolymerElement
+package:polymer/src/build/linter.dart 174:54  _LinterVisitor.visitElement
+package:html5lib/dom_parsing.dart 12:50       TreeVisitor.visit
+package:html5lib/dom_parsing.dart 24:49       TreeVisitor.visitChildren
+package:html5lib/dom_parsing.dart 30:48       TreeVisitor.visitNodeFallback
+package:html5lib/dom_parsing.dart 39:50       TreeVisitor.visitElement
+package:polymer/src/build/linter.dart 178:28  _LinterVisitor.visitElement
+package:html5lib/dom_parsing.dart 12:50       TreeVisitor.visit
+package:html5lib/dom_parsing.dart 24:49       TreeVisitor.visitChildren
+package:html5lib/dom_parsing.dart 30:48       TreeVisitor.visitNodeFallback
+package:html5lib/dom_parsing.dart 39:50       TreeVisitor.visitElement
+package:polymer/src/build/linter.dart 178:28  _LinterVisitor.visitElement
+package:html5lib/dom_parsing.dart 12:50       TreeVisitor.visit
+package:html5lib/dom_parsing.dart 24:49       TreeVisitor.visitChildren
+package:html5lib/dom_parsing.dart 30:48       TreeVisitor.visitNodeFallback
+package:html5lib/dom_parsing.dart 32:52       TreeVisitor.visitDocument
+package:html5lib/dom_parsing.dart 16:52       TreeVisitor.visit
+package:polymer/src/build/linter.dart 184:10  _LinterVisitor.run
+package:polymer/src/build/linter.dart 41:17   Linter.apply.<fn>.<fn>
+dart:isolate                                  _RawReceivePortImpl._handleMessage
+build.dart finished [1787 ms]
+
+---
+build.dart --machine --changed=web\pol_events.html
+
+build.dart finished [1459 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart
+
+build.dart finished [2102 ms]
+
+---
+build.dart --machine --changed=web\pol_events.html
+
+build.dart finished [2123 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart
+
+build.dart finished [2050 ms]
+
+---
+build.dart --machine --changed=web\pol_events.html
+
+build.dart finished [2342 ms]
+
+---
+build.dart --machine --changed=web\pol_events.html
+
+build.dart finished [2069 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2873 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart --changed=web\pol_events.html
+
+build.dart finished [2098 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [2574 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [1725 ms]
+
+---
+build.dart --machine --changed=web\pol_events.dart
+
+build.dart finished [1597 ms]
+

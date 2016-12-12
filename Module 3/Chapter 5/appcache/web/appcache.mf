@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# 2014-05-18:v1
+
+CACHE:
+cached1.html
+appcache.css
+appcache.dart
+http://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js
+
+NETWORK:
+*
+
+FALLBACK:
+/ offline.html

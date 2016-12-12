@@ -1,0 +1,13 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<polymer-element name="pol-list">
+  <template>
+    <ul>
+      <template repeat="{{comp in companies}}">
+        <li> {{comp}} is an excellent company to work for.</li>
+      </template>
+      </ul>
+      <p><b> We selected {{companies.length}} companies for you. </b></p>
+      <button on-click="{{addcompanies}}">Add some companies</button>
+  </template>
+   <script type="application/dart" src="pol_list.dart"></script>
+</polymer-element>

@@ -1,0 +1,4 @@
+name: random_range
+description: A sample command-line application
+#dev_dependencies:
+#  unittest: any

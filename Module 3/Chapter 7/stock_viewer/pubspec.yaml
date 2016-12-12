@@ -1,0 +1,6 @@
+name: AdnBlogViewer
+author: Philippe Leefsma <philippe.leefsma@autodesk.com>
+homepage: http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html
+description: A sample web service  application, by Philippe Leefsma
+dependencies:
+  browser: any

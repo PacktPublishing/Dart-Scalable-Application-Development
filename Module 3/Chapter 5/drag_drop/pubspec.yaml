@@ -1,0 +1,4 @@
+name: drag_drop
+description: A sample web application
+dependencies:
+  browser: any

@@ -1,0 +1,7 @@
+name: using_worker
+description: A sample command-line application
+dependencies:
+  http_server: any
+  levenshtein: any
+  mustache: any
+  worker: any

@@ -1,0 +1,4 @@
+name: comparing_objects
+description: A sample command-line application
+#dev_dependencies:
+#  unittest: any

@@ -1,0 +1,4 @@
+name: date_time
+description: A sample command-line application
+dependencies:
+  intl: any

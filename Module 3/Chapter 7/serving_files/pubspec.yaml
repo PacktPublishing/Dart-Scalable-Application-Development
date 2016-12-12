@@ -1,0 +1,4 @@
+name: serving_files
+description: A sample command-line application
+dependencies:
+  http_server: any

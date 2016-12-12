@@ -1,0 +1,5 @@
+name: js_interop
+description: A sample web application
+dependencies:
+  browser: any
+  js: any

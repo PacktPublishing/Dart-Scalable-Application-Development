@@ -1,0 +1,7 @@
+name: client_server
+version: 0.0.7
+author: Dzenan Ridjanovic <dzenanr@gmail.com>
+description: Spirals to learn how to use IndexedDB and client-server communication.
+homepage: http://ondart.me/
+dependencies:
+  browser: any

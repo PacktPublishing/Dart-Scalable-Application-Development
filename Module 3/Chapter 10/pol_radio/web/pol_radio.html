@@ -1,0 +1,21 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<polymer-element name="pol-radio">
+  <template>
+    <div on-change="{{getFavoriteJob}}">
+      What is your favorite job?
+      <div>
+        <label for="sd">Software developer <input name="job" type="radio" id="sd" value="Software developer"></label>
+      </div>
+      <div>
+        <label for="wd">Web Developer <input name="job" type="radio" id="wd" value="Web developer"></label>
+      </div>
+      <div>
+        <label for="tt">Tester<input name="job" type="radio" id="tt" value="Tester"></label>
+      </div>
+    </div>
+    <div>
+      You selected: {{favoriteJob}}
+    </div>
+  </template>
+   <script type="application/dart" src="pol_radio.dart"></script>
+</polymer-element>

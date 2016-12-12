@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular controller</title>
+
+    <script async type="application/dart" src="angular_controller.dart"></script>
+    <script src="packages/shadow_dom/shadow_dom.min.js"></script>
+    <script async src="packages/browser/dart.js"></script>
+
+    <link rel="stylesheet" href="angular_controller.css">
+  </head>
+  <body ng-cloak>
+    <h1>Angular Controller</h1>
+
+ <div job-listing>
+    <h3>Job List</h3>
+    <ul>
+      <li class="pointer"
+          ng-repeat="job in jobs"
+          ng-click="selectJob(job)">
+        {{job.type}}
+      </li>
+    </ul>
+
+    <h3>Job Details</h3>
+    <div><strong>Type: </strong>{{selectedJob.type}}</div>
+    <div><strong>Company: </strong>{{selectedJob.company}}</div>
+    <div><strong>Salary: </strong>{{selectedJob.salary}}</div>
+    <div><strong>Posted: </strong>{{selectedJob.posted}}</div>
+     <div><strong>Skills: </strong>
+      <ul>
+        <li ng-repeat="skill in selectedJob.skills">
+          {{skill}}
+        </li>
+      </ul>
+    </div>
+    <div><strong>More info: </strong>{{selectedJob.info}}</div>
+  </div>
+
+  </body>
+</html>

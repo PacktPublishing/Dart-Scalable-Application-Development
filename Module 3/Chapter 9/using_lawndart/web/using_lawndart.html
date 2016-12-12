@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Post form</title>
+<link rel="stylesheet" href="using_lawndart.css">
+
+</head>
+<style>
+.entry label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.submitarea {
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: SlateBlue;
+  clear: left;
+}
+
+.responsetext {
+  padding: 5px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  clear: left;
+  background-color: WhiteSmoke;
+  width: 90%;
+  height: 70px;
+  resize: none;
+}
+</style>
+<body>
+  <h1>Posting job data</h1>
+
+  <form id="input">
+
+    <div class="entry">
+      <label>Company: </label><input type="text" id="comp">
+    </div>
+    <div class="entry">
+      <label>Choose a job type:</label> <select id="type" selectedIndex=0>
+        <option>Choose:</option>
+        <option>Web developer</option>
+        <option>Software developer</option>
+        <option>Tester</option>
+        <option>System architect</option>
+        <option>System engineer</option>
+      </select>
+    </div>
+    <div class="entry">
+      <label>Salary: </label><input type="text" id="sal">
+    </div>
+    <div class="entry">
+      <label>Date posted: </label><input type="date" id="posted">
+    </div>
+    <div class="entry">
+      <label>Job is vacant: </label> <input type="checkbox"
+        checked=false id="open">
+    </div>
+    <div class="submitarea">
+      <input type="button" id="store" value="Store">
+      <input type="reset" value="Clear"> <br>
+    </div>
+
+  </form>
+
+  <script type="application/dart" src="using_lawndart.dart"></script>
+  <script src="packages/browser/dart.js"></script>
+</body>
+</html>

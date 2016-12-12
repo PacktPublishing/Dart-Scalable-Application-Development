@@ -1,0 +1,4 @@
+name: using_mongodb
+description: A sample command-line application
+dependencies:
+  mongo_dart: any

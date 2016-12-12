@@ -1,0 +1,5 @@
+name: using_mysql
+description: A sample command-line application
+dependencies:
+  options_file: any
+  sqljocky: any

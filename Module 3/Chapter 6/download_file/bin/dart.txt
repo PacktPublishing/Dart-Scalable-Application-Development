@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning Dart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=”utf-8”> 
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+  </head>
+  <body>
+    <div class="container">    
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default" role="navigation">
+	    <!-- Brand and toggle for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://github.com/Ivo-Balbaert/learning_dart">Learning Dart</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#Chapters">Chapters</a></li>
+            <li><a href="#Code">Code</a></li>
+            <li><a href="#Code">Quotes</a></li>
+            <li><a href="#Corrections">Corrections</a></li>
+            <li><a href="#Spirals">Spirals</a></li>
+            <li><a href="#Polymer">Polymer</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Applications">Applications</a></li>
+            <li><a href="#Links">Links</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Authors">Authors</a></li>
+          </ul>
+        </div> 
+      </nav> 
+      
+      <div class="jumbotron">
+        <p>Learning Dart is based on projects. Developing projects is done from simple to more complex spirals.  </p>
+        <a href="http://bit.ly/1b1jZR3" class="btn btn-lg btn-primary" role="button">Learning Dart</a>
+        &nbsp; 
+        <span> a <a href="http://www.packtpub.com/">PACKT</a> book by Ivo Balbaert & Dzenan Ridjanovic</span>       
+      </div>
+      
+      <div class="row">
+        <div class="col-md-2">
+          <ul class="nav nav-list">
+            <li id="Projects" class="nav-header">Projects</li>
+            <li><a href="https://github.com/Ivo-Balbaert/learning_dart">Learning Dart</a></li>
+            <li><a href="https://github.com/dzenanr/association">Association</a></li>
+            <li><a href="https://github.com/dzenanr/association_members">Association Members</a></li>
+            <li><a href="https://github.com/dzenanr/attracting_particles">Attracting Particles</a></li> 
+            <li><a href="https://github.com/dzenanr/balls">Balls</a></li>  
+            <li><a href="https://github.com/dzenanr/boarding">Boarding</a></l
+            <li><a href="https://github.com/dzenanr/breakout">Breakout</a></li>            
+            <li><a href="https://github.com/dzenanr/car_collisions">Car Collisions</a></li>
+            <li><a href="https://github.com/dzenanr/collision_clones">Collision Clones</a></li>
+            <li><a href="https://github.com/dzenanr/concept_attribute">Concept Attribute</a></li>
+            <li><a href="https://github.com/dzenanr/css_spirals">CSS: Spirals</a></li>  
+            <li><a href="https://github.com/dzenanr/art_pen">DArt Pen</a></li>
+            <li><a href="https://github.com/dzenanr/dart_pen">Dart Pen wout Dartling</a></li>
+            <li><a href="https://github.com/dzenanr/dartlero">Dartlero</a></li>
+            <li><a href="https://github.com/dzenanr/dartlero_category_links">Dartlero Category Links</a></li>
+            <li><a href="https://github.com/dzenanr/dartlero_example">Dartlero Example</a></li>
+            <li><a href="https://github.com/dzenanr/dartlero_tasks">Dartlero Tasks</a></li>
+            <li><a href="https://github.com/dzenanr/dartling">Dartling</a></li>
+            <li><a href="https://github.com/dzenanr/dartling_app">Dartling App</a></li>
+            <li><a href="https://github.com/dzenanr/dartling_default_app">Dartling Default App</a></li>
+            <li><a href="https://github.com/dzenanr/dartling_dwt_todo_mvc_spirals">Dartling DWT Todo MVC: Spirals</a></li>
+            <li><a href="https://github.com/dzenanr/dartling_examples">Dartling Examples</a></li>
+            <li><a href="https://github.com/dzenanr/dartling_gen">Dartling Gen</a></li>
+            <li><a href="https://github.com/dzenanr/dartling_tasks">Dartling Tasks</a></li>
+            <li><a href="https://github.com/dzenanr/dartling_todos">Dartling Todos</a></li>
+            <li><a href="https://github.com/dzenanr/dartling_todo_mvc_spirals">Dartling Todo MVC: Spirals</a></li>
+            <li><a href="https://github.com/dzenanr/datris">Datris</a></li>
+            <li><a href="https://github.com/dzenanr/example_console">Example Console</a></li>
+            <li><a href="https://github.com/dzenanr/exploring_lists">Exploring Lists</a></li>                         
+            <li><a href="https://github.com/dzenanr/indexed_db_spirals">IndexedDB: Spirals</a></li>
+            <li><a href="https://github.com/dzenanr/invaders">Invaders</a></li>
+            <li><a href="https://github.com/dzenanr/link_list">Link List</a></li>
+            <li><a href="https://github.com/dzenanr/mb_spirals">Magic Boxes: Spirals</a></li>
+            <li><a href="https://github.com/dzenanr/educ_memory_game">Memory</a></li> 
+            <li><a href="https://github.com/dzenanr/mgmt_contacts">Mgmt of Contacts</a></li>            
+            <li><a href="https://github.com/dzenanr/model_concepts">Model Concepts</a></li>
+            <li><a href="https://github.com/dzenanr/ondart_examples">On Dart Examples</a></li>
+            <li><a href="https://github.com/dzenanr/game_parking">Parking</a></li>
+            <li><a href="https://github.com/dzenanr/ping_pong">Ping Pong</a></li>
+            <li><a href="https://github.com/dzenanr/ping_pong_dom">Ping Pong DOM</a></li>
+            <li><a href="https://github.com/dzenanr/polymer_category_links">Polymer Category Links: Spirals</a></li>
+            <li><a href="https://github.com/dzenanr/polymer_links">Polymer Links: Spirals</a></li>
+            <li><a href="https://github.com/dzenanr/polymer_project_tasks">Polymer Project Tasks</a></li>
+            <li><a href="https://github.com/dzenanr/car_parking">Rush Hour wout Dartling</a></li>
+            <li><a href="https://github.com/dzenanr/sliding_puzzle_wout_ui">Sliding Puzzle wout UI</a></li> 
+            <li><a href="https://github.com/dzenanr/social_blogging">Social Blogging</a></li>
+            <li><a href="https://github.com/dzenanr/icacoe">Tic-tac-toe</a></li>
+            <li><a href="https://github.com/dzenanr/todo_mvc">todo_mvc</a></li>
+            <li><a href="https://github.com/dzenanr/todo_mvc_mongodb">todo_mvc_mongodb</a></li>
+            <li><a href="https://github.com/dzenanr/todo_mongodb">Todo MongoDB</a></li>
+            <li><a href="https://github.com/dzenanr/todo_mysql">Todo MySQL</a></li>
+            <li><a href="https://github.com/dzenanr/travel_impressions">Travel Imppressions</a></li>
+            <li><a href="https://github.com/dzenanr/wandering_path">Wandering Path</a></li>
+            <li><a href="https://github.com/dzenanr/word_frequency">Word Frequency</a></li> 
+            <li><a href="https://github.com/dzenanr/word_synonyms">Word Synonyms</a></li>               
+          </ul>
+          <br/>
+          <ul class="nav nav-list">
+            <li id="Links" class="nav-header">Links</li>
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">On Dart<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://goo.gl/aF59E2">Intro to Dart with projects</a></
+                <li><a href="http://dzenanr.github.io/">On Dart Blog</a></li>
+                <li><a href="http://ondart.me/">On Dart Education</a></li>
+                <li><a href="https://plus.google.com/+OndartMe">On Dart Google+</a></li>
+                <li><a href="http://goo.gl/lubfhR">On Dart Channel</a></li>
+                <li><a href="http://goo.gl/kmKrWf">Start on Dart</a></li>
+              </ul>
+            </li>             
+          </ul>
+        </div>
+        
+        <div class="col-md-8">
+          <p>
+            Developing a web application is still a challenging task. 
+            There is a browser side and a server side with databases. 
+            There are many different technologies to master in order to feel comfortable with a full client/server stack. 
+            There are different frameworks with different objectives. 
+            There are even different programming languages that a developer must learn, each one more suitable either for client or server.
+            Learning Dart will help a developer to become more focused by using <a href="https://www.dartlang.org/">Dart</a> for both clients and servers. 
+          </p>
+          
+          <h3 id="Chapters">Chapters</h3>
+          <p>
+            Learning Dart has 12 chapters. It begins with basic elements of Dart and it ends with a client/server application that uses 
+            <a href="http://www.mongodb.org/">MongoDB</a> for data persistence on the server side.
+          </p>
+          <h4>Chapter 1, Dart -- A Modern Web Programming Language</h4>
+          <p>
+            You will understand what Dart is all about. 
+            Dart is presented as a major step forward in the web programming arena.
+          </p>
+          <h4>Chapter 2, Getting to Work with Dart</h4>
+          <p>
+            You will get a firm grasp on how to program in Dart. 
+            The code and data structures in Dart and its functional principles are explained by exploring practical examples.
+          </p>
+          <h4>Chapter 3, Structuring Code with Classes and Libraries</h4>
+          <p>
+            You will understand how to use Dart classes to organize code. 
+            Dart libraries will be introduced to show how complex software may be packaged.
+          </p>
+          <h4>Chapter 4, Modeling Web Applications with Model Concepts and Dartlero</h4>
+          <p>
+            You will be able to design graphically a small model in the Model Concepts tool, which is developed in Dart. 
+            A model is then represented in Dart as several classes that inherit some data and operations from classes of the Dartlero model framework, also done in Dart.
+          </p>
+          <h4>Chapter 5, Handling the DOM in a New Way</h4>
+          <p>
+            You will learn how to access HTML elements in Dart. 
+            Some elements will be even created in Dart and placed properly in the Document Object Model (DOM) of a web page. 
+            Dart will also handle user events, such as a click on a button. 
+            Finally, you will be able to create a simple game in Dart.
+          </p>
+          <h4>Chapter 6, Combining HTML Forms with Dart</h4>
+          <p>
+            You will enter some data in a form. 
+            The data will be validated by HTML5 and Dart. 
+            Then, the valid data will be saved in a local storage of a browser. 
+          </p>
+          <h4>Chapter 7, Building Games with HTML5 and Dart</h4>
+          <p>
+            Based on what you have learned already, you will create step-by-step, a well-known memory game. 
+            Each step will be a new spiral represented as a complete project in Dart Editor. 
+            The first spiral will draw only a rectangle, while the last spiral will be a game that you may show to your friend. 
+          </p>
+          <h4>Chapter 8, Developing Business Applications with Polymer Web Components</h4>
+          <p>
+            You will create several web components by using Polymer.dart. 
+            Those web components will be used in different sections of a single page application. 
+            Three different projects with web components will be presented in this chapter.
+          </p>
+          <h4>Chapter 9, Modeling More Complex Applications with Dartling</h4>
+          <p>
+            You will discover how a graphical model can be transformed into a JSON document, 
+            then used to generate a complete model in Dart by using the Dartling domain model framework together with its tools. 
+            Dartling follows the Model View Controller (MVC) pattern to separate a model from its views.
+          </p>
+          <h4>Chapter 10, MVC and UI Frameworks in Dart -- an Overview</h4>
+          <p>
+            You will be introduced to different frameworks already developed in Dart. 
+            Since Dart is a brand new language, those frameworks are at early stages of their useful life.
+          </p>
+          <h4>Chapter 11, Local Data and Client-server Communication</h4>
+          <p>
+            You will store application data in a local database called IndexedDB. 
+            The data will be then sent, in a form of a JSON document, to a Dart server. 
+            Asynchronous programming with futures will be covered in this chapter.
+          </p>
+          <h4>Chapter 12, Data-driven Web Applications with MySQL and MongoDB</h4>
+          <p>
+            You will learn how to use database drivers to save (and load) data to (and from) to a relational database and a NoSQL database. 
+            Data sent from a browser as a JSON document will be easily saved in MongoDB in the same JSON form. 
+            Two clients will exchange data with the server so that both of them will be up-to-date.
+          </p>
+          
+          <h3 id="Code">Code</h3>
+          <p>
+            The code for the Learning Dart book is freely available at <a href="https://github.com/">GitHub</a>. 
+            The starting point is the <a href="https://github.com/Ivo-Balbaert/learning_dart">Learning Dart</a> project
+            organized chapter-by-chapter with web links to other projects.
+            All projects are tested in <a href="https://www.dartlang.org/tools/editor/"> Dart Editor 1.0 (STABLE)</a> for Dart 1.0, 
+            including <a href="https://www.dartlang.org/polymer-dart/">Polymer.dart</a> projects. 
+          </p>
+          
+          <h3 id="Quotes">Quotes</h3>
+          <blockquote class="twitter-tweet" lang="en"><p>Just bought &quot;Learning Dart&quot;, a new book about 
+            <a href="https://twitter.com/search?q=%23dartlang&amp;src=hash">#dartlang</a> 
+            <a href="http://t.co/3Y4BrXaySa">http://t.co/3Y4BrXaySa</a></p>&mdash; Seth Ladd (@sethladd) 
+            <a href="https://twitter.com/sethladd/statuses/419265023353946112">January 4, 2014</a>
+          </blockquote>
+          <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          
+          <blockquote lang="en">
+            <p>
+              Siempre me han gustado los libros que son capaces de combinar teor&iacute;a y pr&aacute;ctica, ya que considero que es 
+              la &uacute;nica f&oacute;rmula para afianzar el aprendizaje.  
+              <a href="http://blogdart.es/2014/01/27/libro-dart/">Moises Belchin</a>
+            </p>
+            <p>
+              Finally, a Dart guide for experienced Web developers.  
+              <a href="http://www.amazon.com/review/RORKGISV85N01/ref=cm_cr_dp_title">Francesco</a>
+            </p>
+            <p>
+              The authors wrote around 360 pages packed with interesting content to get you started with Dart.   
+              <a href="http://www.grobmeier.de/learning-dart-16022014.html">Christian Grobmeier</a>
+            </p>
+            <p>
+              As an experienced software developer who is new to Dart, I really enjoyed this book.
+              ...
+              If you are interested in learning about Dart I think this book is a great resource.              
+              <a href="http://www.amazon.com/review/R14ULJV9HU9IAP/ref=cm_cr_dp_title">Aaron M Gifford</a>
+            </p>
+            <p>
+              After reading this book I would say it's one of the top 2 Dart books on the market. The first 3 chapters are important to 
+              any level programmer and is written with enough information to not overwhelm a beginner and enough comparisons to other 
+              languages for someone with experience. If you're a seasoned developer who would rather not read documentation to learn a 
+              language then Learning Dart is a great alternative.              
+              <a href="http://www.amazon.com/review/R3NGLKMN1HR0O5/ref=cm_cr_dp_title"> Loc Nguyen</a>
+            </p>
+            <p>
+              Learning Dart is a very comprehensive volume that covers an impressive range of Dart web development related concepts: 
+              from basics like built-in types and their methods or using classes and objects to combining Dart with HTML5 forms, 
+              developing business apps with Polymer web components, client-server communication or data-driven web apps with MongoDB and 
+              MySQL, to name just a few.              
+              <a href="http://www.amazon.com/review/R18RTGPT1STAHE/ref=cm_cr_dp_title">Lidia Hocke</a>
+            </p>
+            <p>
+              Known for their extensive range of pragmatic IT ebooks, Packt Publishing are celebrating their 2000th book title...
+              Learning Dart was selected as a title and published by Packt earlier this year. As a project that aims to revolutionise a 
+              language as crucial as JavaScript, Dart is a great example of an emerging technology which aims to support the community 
+              and their requirement for constant improvement. The content itself explains how to develop apps using Dart and HTML5 in a 
+              model-driven and fast-paced approach, enabling developers to build more complex and high-performing web apps.              
+              <a href="http://www.packtpub.com/news/2000book">Packt Publishing</a>
+            </p>
+          </blockquote> 
+
+          <div>   
+            <a href="http://www.packtpub.com/news/2000book">
+              <img src="img/2000th_book_banner.png" alt="2000th_book_banner" height="250" width="600">
+            </a>            
+          </div>          
+     
+          <h3 id="Corrections">Corrections</h3>
+          <p>
+            Post problems, issues, comments, questions at
+            <a href="https://plus.google.com/+OndartMe">On Dart</a> G+ page.
+            They may appear in the <a href="http://goo.gl/ReokrJ">corrections</a> or 
+            <a href="http://www.packtpub.com/learning-dart/book?utm_source=socialmedia.com&utm_medium=bookpage&utm_campaign=Learning%20Dart">support</a>
+             of the book.
+            If you find that some code is not up-to-date, we promise to update it ASAP.
+          </p> 
+
+          <h3 id="Spirals">Spirals</h3>
+          <p>
+            The spiral (version) approach to software learning and development, which preserves a project history as a series of code snapshots or spirals, 
+            is used in this book.
+          </p>  
+          <p>
+            Three points are important in the spiral approach:
+            <ol>
+              <li>the history of development is preserved;</li>
+              <li>simple solutions are provided first -- later on these solutions may be replaced by more advanced solutions;</li>
+              <li>only concepts used in a spiral are explained. </li>             
+            </ol> 
+            All three points are important in teaching and learning technologies.            
+          </p>
+          <p>
+            Learning new software concepts and technologies is a challenging task. 
+            Learning in spirals, from simple to more advanced concepts but with concrete software applications, 
+            helps readers get a reasonable confidence level early on, and motivates them to learn by providing more useful applications. 
+            With each new spiral, the project grows and new concepts are introduced. A new spiral is explained with respect to the previous one. 
+            The difference between two consecutive spirals is that the next spiral has the new code introduced and the old code modified or deleted. 
+            This is called <a href="http://www.ed.psu.edu/NASA/achrtxt.html">learning by anchoring</a> to what we already understand. 
+            With a new spiral, we can come back to what we did previously and improve it. 
+            In this way, learning in spirals can touch the same topic several times, but each time with more details in a better version.
+          </p>
+
+          <h3 id="Polymer">Polymer</h3>
+          <p>
+            With <a href="https://www.dartlang.org/polymer-dart/">Polymer.dart</a>, 
+            a new approach of developing web applications with web components will allow a developer to divide a web page in sections and 
+            reuse an already developed and tested web component for each section. In near future, different catalogs of web components will appear, 
+            enabling after waiting for many years an engineering approach to software development. 
+            A web component may be composed from other web components. It may pass data to its components. 
+            A web component may inherit its behavior from another web component. It may access an already instantiated web component.
+          </p>           
+        </div>
+        
+        <div class="col-md-2">
+          <ul class="nav nav-list">
+            <li id="Applications" class="nav-header">Applications</li>
+            <li><a href="app/attracting_particles/attracting_particles.html">Attracting Particles</a></li>
+            <li><a href="app/balls/balls.html">Balls</a></li>
+            <li><a href="app/breakout/game.html">Breakout</a></li>
+            <li><a href="app/car_collisions/car_collisions.html">Car Collisions</a></li>
+            <li><a href="app/collision_clones/collision_clones.html">Collision Clones</a></li>
+            <li><a href="app/concept_attribute/concept/attribute/concept_attribute_web.html">Concept Attribute</a></li>
+            <li><a href="app/css_spirals">CSS: Spirals</a></li>
+            <li><a href="app/art_pen/d_art_pen.html">DArt Pen</a></li>
+            <li><a href="app/dart_pen/dart_pen.html">Dart Pen wout Dartling</a></li>
+            <li><a href="app/dartling_dwt_todo_mvc/dartling_dwt_todo_mvc.html">Dartling DWT Todo MVC</a></li>
+            <li><a href="app/dartling_examples/category_keyword/category/keyword/category_keyword_web.html">Dartling Examples: Category Keyword</a></li>
+            <li><a href="app/dartling_examples/category_question_link/category_question/link/category_question_link_web.html">Dartling Examples: Category Question Link</a></li>
+            <li><a href="app/dartling_todos/dartling_todos.html">Dartling Todos</a></li>
+            <li><a href="app/datris/game.html">Datris</a></li>
+            <li><a href="app/example_console/example_console.html">Example Console</a></li>
+            <li><a href="app/indexed_db/app.html">IndexedDB</a></li>
+            <li><a href="app/invaders/invaders.html">Invaders</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Magic Boxes<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="app/magic_boxes/s01/mb.html">Spiral 01</a></li>
+                <li><a href="app/magic_boxes/s02/mb.html">Spiral 02</a></li>
+                <li><a href="app/magic_boxes/s03/mb.html">Spiral 03</a></li>
+                <li><a href="app/magic_boxes/s04/mb.html">Spiral 04</a></li>
+                <li><a href="app/magic_boxes/s05/mb.html">Spiral 05</a></li>
+                <li><a href="app/magic_boxes/s06/mb.html">Spiral 06</a></li>
+                <li><a href="app/magic_boxes/s07/mb.html">Spiral 07</a></li>
+                <li><a href="app/magic_boxes/s08/mb.html">Spiral 08</a></li>
+                <li><a href="app/magic_boxes/s09/mb.html">Spiral 09</a></li>
+                <li><a href="app/magic_boxes/s10/mb.html">Spiral 10</a></li>
+                <li><a href="app/magic_boxes/s11/mb.html">Spiral 11</a></li>
+                <li><a href="app/magic_boxes/s12/mb.html">Spiral 12</a></li>
+                <li><a href="app/magic_boxes/s13/mb.html">Spiral 13</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Last Spiral</li>
+                <li><a href="app/model_concepts/model_concepts.html">Model Concepts</a></li>
+              </ul>
+            </li>
+            <li><a href="app/memory_game/educ_memory_game.html">Memory</a></li>
+            <li><a href="app/model_concepts/model_concepts.html">Model Concepts</a></li>
+            <li><a href="app/game_parking/game_parking.html">Parking</a></li>
+            <li><a href="app/ping_pong/ping_pong.html">Ping Pong</a></li>
+            <li><a href="app/ping_pong_dom/ping_pong_dom.html">Ping Pong DOM</a></li>
+            <li><a href="app/rush_hour/car_parking.html">Rush Hour wout Dartling</a></li>
+            <li><a href="app/tic_tac_toe/game.html">Tic-tac-toe</a></li>
+            <li><a href="app/travel_impressions/travel/impressions/travel_impressions_web.html">Travel Imppressions</a></li>
+            <li><a href="app/wandering_path/wandering_path.html">Wandering Path</a></li>
+            <li><a href="app/word_frequency/word_frequency.html">Word Frequency</a></li>
+            <li><a href="app/word_synonyms/word_synonyms.html">Word Synonyms</a></li>
+            <!-- <li><a href="app/polymer_project_tasks/polymer_project_tasks.html">Polymer Project Tasks</a></li> -->
+          </ul>
+          <br/>
+          <ul class="nav nav-list">
+            <li id="Links" class="nav-header">Links</li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="https://angulardart.org/">AngularDart</a></li>
+            <li><a href="http://soat.developpez.com/tutoriels/dart/dart-manuel-reference/">Cours sur Dart</a></li>
+            <li><a href="https://www.dartlang.org/">Dart</a></li>
+            <li><a href="https://api.dartlang.org/apidocs/channels/stable/">Dart API</a></li>
+            <li><a href="https://www.dartlang.org/books/">Dart Books</a></li>
+            <li><a href="http://dartlangfr.net/dart-cheat-sheet/">Dart Cheat Sheet</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dart Codelabs<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.dartlang.org/codelabs/darrrt/">Client-side</a></li>
+                <li><a href="https://www.dartlang.org/codelabs/deploy/">Server-side</a></li>
+                <li><a href="https://github.com/angular/ng-darrrt-codelab/blob/master/README.md">AngularDart</a></li>
+                <li><a href="https://github.com/eric-taix/movie-board/blob/master/docs/user-story-1-1.md">PolymerDart</a></li>
+              </ul>
+            </li>
+            <li><a href="https://www.dartlang.org/tools/editor/">Dart Editor</a></li>
+            <li><a href="https://github.com/dart-lang">Dart at GitHub</a></li>
+            <li><a href="http://news.dartlang.org/">Dart News</a></li>
+            <li><a href="http://www.dartgamedevs.org/">Dart Game Devs</a></li>
+            <li><a href="http://pub.dartlang.org/">Dart Pub</a></li>
+            <li><a href="http://stackoverflow.com/questions/tagged/dart">Dart Questions</a></li>
+            <li><a href="http://www.dartlang.org/articles/style-guide/">Dart Style Guide</a></li>
+            <li><a href="http://synonym.dartlang.org/">Dart Synonyms</a></li>
+            <li><a href="https://www.dartlang.org/docs/tutorials/">Dart Tutorials</a></li>       
+            <li><a href="http://www.youtube.com/user/DartlangTV">Dart TV</a></li>
+            <li><a href="https://plus.google.com/u/0/b/113649577593294551754/communities/114566943291919232850">Dartisans</a></li>
+            <li><a href="https://github.com/nikgraf/exploring-angular.dart/blob/master/resources.md">Exploring Angular</a></li>
+            <li><a href="http://goo.gl/4nM9qL">Intro to Dart</a></li>
+            <li><a href="https://www.dartlang.org/polymer-dart/">PolymerDart</a></li>
+            <li><a href="http://blog.sethladd.com/">Seth Ladd's Blog</a></li>
+            <li><a href="http://try.dartlang.org/">Try Dart</a></li>
+          </ul>
+        </div>
+      </div>
+   
+      <hr/> 
+      
+      <div>
+        <h3 id="About" class="text-center">About</h3>  
+        <p>
+          This site is about Learning Dart book that will help you learn Dart project-by-project.
+          You will become more focused by using Dart for both clients and servers. 
+          By using the same language, you will lose neither 
+          <a href="https://www.dartlang.org/performance/">performance</a> nor flexibility. 
+          Dart is both an <a href="https://www.dartlang.org/dart-tips/dart-tips-ep-10.html">object-oriented</a> 
+          and a <a href="https://www.dartlang.org/dart-tips/dart-tips-ep-6.html">functional</a> language. 
+          A mix of both approaches is possible with Dart providing a great professional freedom and a programming background flexibility. 
+          In addition, Dart provides many <a href="http://pub.dartlang.org/">libraries and tools</a>.
+        </p>
+      </div>
+      
+      <hr/>
+      
+      <div id="Authors" class="row">
+        <div class="col-md-6">
+          <h4 class="muted text-center">Ivo Balbaert</h4>
+          <p>
+            Ivo Balbaert is currently a Lecturer on Web Programming and Databases at <a href="http://www.cvoantwerpen.be">CVO Antwerpen</a>, 
+            a community college in Belgium. He received a Ph.D. in Applied Physics from the University of Antwerp in 1986. 
+            He worked for 20 years in the software industry as a developer and consultant in several companies, 
+            and he also worked for 10 years as a Project Manager at the University Hospital of Antwerp. 
+            From 2000 onwards, he switched to partly teaching and partly developing software (KHM Mechelen, CVO Antwerpen). 
+            He also wrote an introductory book in Dutch about developing in Ruby and Rails: Programmeren met Ruby en Rails, Van Duuren Media. 
+            In 2012, he authored a book on the Go programming language: The Way To Go, IUniverse.
+          </p>
+          <a href="http://www.linkedin.com/pub/ivo-balbaert/0/9b3/949" class="btn btn-info">LinkedIn</a>
+        </div>
+        <div class="col-md-6">
+          <h4 class="muted text-center">Dzenan Ridjanovic</h4>
+          <p>
+            Dzenan Ridjanovic is a professor who is planning to retire from University in 2014 in order 
+            to focus on the development of web applications with Dart, HTML5, web components, and NoSQL databases. 
+            For more than 10 years, he was a Director of Research and Development for the Silverrun team, 
+            which created several commercial tools for the analysis, design, and development of data-driven applications. 
+            He was a principal developer of the Modelibra tools and frameworks for model-driven development in Java. 
+            Recently, he has been developing the <a href="https://github.com/dzenanr/dartling">Dartling</a> framework 
+            for the design and code generation of Dart models.
+          </p>
+          <a href="http://www.linkedin.com/in/modelibra" class="btn btn-info">LinkedIn</a>
+        </div>
+      </div>
+      
+      <hr/>
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <ul class="nav nav-pills">
+                <li><a href="#">Home</a></li>
+              </ul>
+            </div>
+            <div class="col-md-8">
+              &nbsp;
+            </div>
+            <div class="col-md-2">
+              <ul class="nav nav-pills">
+                <li><a href="http://dartisan.be/">Services</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+   
+	</div> <!-- /container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

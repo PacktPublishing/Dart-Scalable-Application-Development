@@ -1,0 +1,8 @@
+# connection.options to define how to connect to a mysql db
+user=root
+password=avalon
+# port defaults to 3306
+port=3306
+db=jobsdb
+# host defaults to localhost
+host=localhost

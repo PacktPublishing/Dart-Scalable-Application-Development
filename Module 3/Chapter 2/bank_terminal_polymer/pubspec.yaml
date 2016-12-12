@@ -1,0 +1,5 @@
+name: bank_terminal
+description: A sample Polymer application
+dependencies:
+  logging: any
+  polymer: any

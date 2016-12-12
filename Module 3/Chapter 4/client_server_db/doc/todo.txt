@@ -1,0 +1,17 @@
+To Do
+
+- test indexed db (IndexedDB uses window from dart:html)
+
+- invalid CSS property names:
+  -- Invalid CSS property name: -webkit-touch-callout
+  -- Invalid CSS property name: font-smoothing
+  -- Invalid CSS property name: -webkit-text-rendering
+
+- improve model code as a true dartisan
+
+- use dartling for the model and its action/reaction events to update IndexedDB
+
+
+
+
+

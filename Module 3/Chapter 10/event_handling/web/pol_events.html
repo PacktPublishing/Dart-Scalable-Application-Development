@@ -1,0 +1,18 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<polymer-element name="pol-events">
+  <template>
+     <div class="auto-style1" on-keypress="{{enter}}">
+        <input type="text" on-change="{{txtChange}}" value="{{thing}}">
+        <input type="checkbox" on-click="{{cbClick}}">
+        <select on-click="{{selChange}}">
+          <option>option 1</option>
+          <option>option 2</option>
+          <option>option 3</option>
+        </select>
+        <button on-click="{{btnclick}}" data-msg="Message from button">Invoke button click</button>
+      </div>
+     <div> This event occurred: {{which_event}} </div>
+     <p>{{ message }}</p>
+  </template>
+   <script type="application/dart" src="pol_events.dart"></script>
+</polymer-element>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html ng-app>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angular component</title>
+
+<script async type="application/dart" src="angular_service.dart"></script>
+<script src="packages/shadow_dom/shadow_dom.min.js"></script>
+<script async src="packages/browser/dart.js"></script>
+
+<link rel="stylesheet" href="angular_service.css">
+</head>
+<body ng-cloak>
+  <h1>Angular Formatter with data service</h1>
+<!--   <div ng-switch="ctrl.jobsLoaded"> -->
+<!--     <div ng-switch-when="false">{{ctrl.message}}</div> -->
+<!--     <div ng-switch-when="true"> -->
+      <div id="filters">
+        <div>
+          <label for="type-filter">Filter jobs by type</label> <input
+            id="type-filter" type="text"
+            ng-model="ctrl.typeFilterString">
+        </div>
+        <div>
+          Filter jobs by company: <span
+            ng-repeat="company in ctrl.companies"> <label>
+              <input type="checkbox"
+              ng-model="ctrl.companyFilterMap[company]">{{company}}
+          </label>
+          </span>
+        </div>
+        <input type="button" value="Clear Filters"
+          ng-click="ctrl.clearFilters()">
+     </div>
+
+      <div job-listing>
+        <h3>Job List</h3>
+        <ul>
+          <li class="pointer"
+            ng-repeat="job in ctrl.jobs | orderBy:'type' | filter:{type:ctrl.typeFilterString} | companyfilter:ctrl.companyFilterMap">
+            <x-salary max-sal="10" salary="job.rate_salary"></x-salary> <span
+            class="extra-space" ng-click="ctrl.selectJob(job)">{{job.type}}
+          </span>
+          </li>
+        </ul>
+      </div>
+      <div ng-if="ctrl.selectedJob != null">
+        <h3>Job Details</h3>
+        <div>
+          <strong>Type: </strong>{{ctrl.selectedJob.type}}
+        </div>
+        <div>
+          <strong>Company: </strong>{{ctrl.selectedJob.company}}
+        </div>
+        <div>
+          <strong>Salary: </strong>
+          <x-salary max-sal="10" salary="ctrl.selectedJob.rate_salary"></x-salary>
+        </div>
+        <div>
+          <strong>Posted: </strong>{{ctrl.selectedJob.posted}}
+        </div>
+        <div>
+          <strong>Skills: </strong>
+          <ul>
+            <li ng-repeat="skill in ctrl.selectedJob.skills">{{skill}}
+            </li>
+          </ul>
+        </div>
+        <div>
+          <strong>More info: </strong>{{ctrl.selectedJob.info}}
+        </div>
+      </div>
+<!--     </div> -->
+<!--   </div> -->
+
+</body>
+</html>

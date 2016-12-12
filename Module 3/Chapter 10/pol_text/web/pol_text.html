@@ -1,0 +1,16 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<polymer-element name="pol-text">
+  <template>
+    <div>
+      Which company do you want to work for?
+      <input type="text" value="{{comps}}">
+      <p> or type a few companies:
+      <textarea value="{{comps}}"></textarea>
+      </p>
+    </div>
+    <div>
+      These are your favorite companies: {{comps}}
+    </div>
+  </template>
+   <script type="application/dart" src="pol_text.dart"></script>
+</polymer-element>

@@ -1,0 +1,4 @@
+name: using_postgresql
+description: A sample command-line application
+dependencies:
+  postgresql: any

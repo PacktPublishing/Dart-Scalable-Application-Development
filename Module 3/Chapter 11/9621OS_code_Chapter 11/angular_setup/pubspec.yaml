@@ -1,0 +1,10 @@
+name: angular_setup
+description: A sample web application
+dependencies:
+  angular: "<=0.14.0"
+  browser: any
+  js: any
+  shadow_dom: any
+  perf_api: 0.0.9
+transformers:
+- angular

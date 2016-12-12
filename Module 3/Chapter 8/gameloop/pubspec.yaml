@@ -1,0 +1,11 @@
+name: boarding
+version: 0.1.1
+author: Dzenan Ridjanovic <dzenanr@gmail.com>
+description: A simple package to use for simple board games. The package has both model and view libraries. See the example folder to see how to use the boarding package.
+homepage: https://github.com/dzenanr/boarding
+environment:
+  sdk: '>=1.1.0+8 <2.0.0'
+documentation: http://goo.gl/kXlDOJ
+dependencies:
+  browser: '>=0.9.1 <0.9.2'
+  unittest: '>=0.10.0 <0.10.9'

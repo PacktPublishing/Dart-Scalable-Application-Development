@@ -1,0 +1,4 @@
+name: using_rethinkdb
+description: A sample command-line application
+dependencies:
+  rethinkdb_driver: any

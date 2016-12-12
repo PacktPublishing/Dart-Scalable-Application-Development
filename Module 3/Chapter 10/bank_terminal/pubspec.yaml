@@ -1,0 +1,8 @@
+name: bank_terminal
+description: A sample Polymer application
+dependencies:
+  polymer: ">=0.11.0 <0.12.0"
+transformers:
+- polymer:
+    entry_points:
+    - web/bank_terminal.html

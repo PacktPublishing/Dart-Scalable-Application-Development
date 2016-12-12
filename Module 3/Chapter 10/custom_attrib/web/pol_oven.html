@@ -1,0 +1,13 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<polymer-element name="pol-oven">
+  <template>
+    <p>The oven is heated to {{temperature}} degrees Celsius.</p>
+    <template if="{{temperature > 400}}">
+      <p>This is too hot.</p>
+    </template>
+    <template if="{{temperature > 1000}}">
+      <p>We will burn here.</p>
+    </template>
+  </template>
+   <script type="application/dart" src="pol_oven.dart"></script>
+</polymer-element>

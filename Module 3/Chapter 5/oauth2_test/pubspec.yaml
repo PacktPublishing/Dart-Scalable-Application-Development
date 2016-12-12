@@ -1,0 +1,6 @@
+name: oauth2_test
+description: A sample web application
+dependencies:
+  browser: any
+  google_oauth2_client: any
+  google_plus_v1_api: any

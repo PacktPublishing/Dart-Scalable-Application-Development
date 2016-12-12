@@ -1,0 +1,8 @@
+name: angular_component
+dependencies:
+  angular: "<=0.14.0"
+  browser: any
+  js: any
+  shadow_dom: any
+transformers:
+- angular

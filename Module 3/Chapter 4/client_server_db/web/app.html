@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tasks with IndexedDb</title>
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+  <section>
+    <header>
+      <h1 class="app-title">tasks</h1>
+    </header>
+    <section id="tasks">
+      <button id="from-server" class="task-button flow-right">
+        From server
+      </button>
+      <button id="to-server" class="task-button flow-right">
+        To server
+      </button>
+      <input id="new-task" placeholder="What needs to be done?" autofocus>
+      <p>
+        <input id="complete-all-tasks" type="checkbox">
+        <ul id="task-list"></ul>
+      </p>
+    </section>
+    <footer class="footer">
+      <span id="active-tasks-count"><strong>0</strong> active tasks</span>
+      <ul id="filter">
+        <li>
+          <a class="selected" href="#/">All</a>
+        </li>
+        <li>
+          <a href="#/active">Active</a>
+        </li>
+        <li>
+          <a href="#/completed">Completed</a>
+        </li>
+      </ul>
+      <button id="clear-completed-tasks" class="task-button flow-right">
+        Clear completed
+      </button>
+    </footer>
+  </section>
+  <footer class="info">
+    <p>Based on
+      <br/> 
+      <a href="http://www.dartlang.org/docs/tutorials/indexeddb/">
+        Target 11: Use IndexedDB
+      </a>
+      <br/>
+      <a href="http://www.dartlang.org/articles/json-web-service/">
+        Using Dart with JSON Web Services
+      </a>
+      <br/>
+      <a href="https://github.com/dzenanr/indexed_db_spirals">
+        Source code
+      </a>
+    </p>
+  </footer>
+
+  <script type="application/dart" src="app.dart"></script>
+  <script src="packages/browser/dart.js"></script>
+</body>
+</html>

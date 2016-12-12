@@ -1,0 +1,4 @@
+name: download_file
+description: A sample command-line application
+dependencies:
+  http: any

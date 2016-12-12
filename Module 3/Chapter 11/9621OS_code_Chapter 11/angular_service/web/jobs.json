@@ -1,0 +1,50 @@
+[
+  {
+    "type":"Web Developer",
+    "salary":8000,
+    "company":"Google",
+    "posted":"2014-07-03",
+    "skills":[
+          "HTML5",
+          "CSS",
+          "Dart"
+    ],
+    "info":"on-site job Palo Alto, California"
+  },
+  {
+    "type":"Software Engineer",
+    "salary":6000,
+    "company":"Microsoft",
+    "posted":"2014-09-03",
+    "skills":[
+          "C#",
+          "ASP.NET",
+          "UML"
+     ],
+    "info":"good teamspirit"
+  },
+  {
+    "type":"Tester",
+    "salary":4000,
+    "company":"Mozilla",
+    "posted":"2014-12-03",
+    "skills":[
+          "Rust",
+          "FireFox",
+          "C++"
+    ],
+    "info":"work on the browser of the future"
+  },
+  {
+    "type":"Julia Developer",
+    "salary":7000,
+    "company":"Julia computing",
+    "posted":"2014-15-03",
+    "skills":[
+          "Julia",
+          "Matlab",
+          "R"
+    ],
+    "info":"model the world with Julia"
+  }
+]

@@ -1,0 +1,4 @@
+name: concat_trim_strings
+description: A sample command-line application
+#dev_dependencies:
+#  unittest: any

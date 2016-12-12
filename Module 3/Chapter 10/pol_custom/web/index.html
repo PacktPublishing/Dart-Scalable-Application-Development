@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample app</title>
+    <script src="packages/web_components/platform.js"></script>
+    <script src="packages/web_components/dart_support.js"></script>
+    <link rel="import" href="packages/core_elements/core_icon.html">
+    <link rel="import" href="packages/core_elements/core_icons.html">
+    <link rel="import" href="packages/core_elements/core_menu.html">
+    <link rel="import" href="packages/core_elements/core_item.html">
+    <link rel="import" href="packages/paper_elements/paper_input.html">
+    <link rel="import" href="packages/paper_elements/paper_radio_group.html">
+    <link rel="import" href="packages/core_elements/core_splitter.html">
+    <link rel="import" href="packages/paper_elements/paper_icon_button.html">
+    <!-- choose the name according to the set you want to load - "social-icons" -->
+    <link rel="import" href="packages/core_elements/src/core-icons/iconsets/social-icons.html">
+    <script type="application/dart">export 'package:polymer/init.dart';</script>
+    <script src="packages/browser/dart.js"></script>
+    <link rel="stylesheet" href="databinding.css">
+  </head>
+  <body unresolved>
+
+     <core-menu selected="0">
+       <core-item icon="settings" label="Settings"></core-item>
+       <core-item icon="dialog" label="Dialog"></core-item>
+       <core-item icon="search" label="Search"></core-item>
+     </core-menu>
+
+     <paper-input label="Waiting for input..."></paper-input>
+
+     <paper-radio-group selected="small">
+          <paper-radio-button name="small" label="Small"></paper-radio-button>
+          <paper-radio-button name="medium" label="Medium"></paper-radio-button>
+          <paper-radio-button name="large" label="Large"></paper-radio-button>
+     </paper-radio-group>
+
+     <div horizontal layout>
+       <div>left <br/><br/><br/></div>
+       <core-splitter direction="left"></core-splitter>
+       <div flex>right</div>
+     </div>
+
+      <!-- use the icon by setting the `icon` attribute. The value consists of iconsset-id a colon followed by the icon name. -->
+    <paper-icon-button id="bookmark-button" icon="social:plus-one" style="fill:steelblue;"></paper-icon-button>
+
+  </body>
+</html>

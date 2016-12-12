@@ -1,0 +1,5 @@
+name: websockets
+description: A sample command-line application
+dependencies:
+  browser: any
+  route: any

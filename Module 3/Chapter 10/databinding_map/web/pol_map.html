@@ -1,0 +1,12 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<polymer-element name="pol-map">
+  <template>
+      <p><b>The list of companies:</b></p>
+      <template repeat="{{key in companies.keys}}">
+        <p>{{key}}: {{companies[key]}}</p>
+      </template>
+      <button on-click="{{addcompanies}}">Add some companies</button>
+      <p>My favorite company is: {{companies[1]}}</p>
+  </template>
+   <script type="application/dart" src="pol_map.dart"></script>
+</polymer-element>
